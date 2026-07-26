@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Lyhour</title>
+<meta name="description" content="Tell Lyhour about your business. Free audit for software, automation, or REÂM marketing.">
+<link rel="icon" href="assets/mark-blue.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — Lyhour">
+<meta property="og:description" content="Tell me about your business. Free audit for software, automation, or REÂM marketing.">
+<meta property="og:image" content="https://YOURDOMAIN/assets/og.png">
+<meta property="og:url" content="https://YOURDOMAIN/contact.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Kantumruy+Pro:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="brand" href="index.html"><img src="assets/mark-blue.svg" alt="Lyhour logo">Lyhour</a>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html">Home</a><a href="work.html">Work</a><a href="services.html">Services</a><a href="about.html">About</a>
+    </div>
+    <div class="nav__cta"><a class="btn btn--solid" href="contact.html" aria-current="page">Let's talk</a><button class="burger" aria-label="Menu" aria-expanded="false">☰</button></div>
+  </nav>
+</header>
+
+<main>
+  <section class="phero">
+    <div class="wrap">
+      <p class="eyebrow rise">( contact )</p>
+      <h1 class="rise">Tell me about your business.</h1>
+      <p class="lead rise">What's slow, broken, or not selling? I'll tell you exactly how I'd fix it — free. Proposal usually within a couple of days.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap" style="display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:start">
+      <!-- FORM -->
+      <form class="form rise" action="https://formspree.io/f/your-id" method="POST">
+        <div class="field"><label for="name">Your name</label><input id="name" name="name" required placeholder="Name / business"></div>
+        <div class="field"><label for="contact">Phone / Telegram / email</label><input id="contact" name="contact" required placeholder="How I can reach you"></div>
+        <div class="field"><label for="need">What do you need?</label>
+          <select id="need" name="need">
+            <option>Software / system (POS, ordering, membership…)</option>
+            <option>Automation / AI (content, growth, bots…)</option>
+            <option>REÂM marketing (F&B growth)</option>
+            <option>Not sure — help me figure it out</option>
+          </select>
+        </div>
+        <div class="field"><label for="msg">Tell me more</label><textarea id="msg" name="message" rows="5" placeholder="Your business, and what you're trying to fix or grow."></textarea></div>
+        <button class="btn btn--solid" type="submit">Send it →</button>
+        <p style="font-family:var(--mono);font-size:.75rem;color:var(--slate)">Replace the form action with your Formspree ID (or Google Form / Telegram link) before going live.</p>
+      </form>
+
+      <!-- DIRECT -->
+      <div class="rise" style="display:grid;gap:1.4rem">
+        <div class="card">
+          <img class="avatar rise" src="assets/photo.png" alt="Lyhour" style="--sz:72px;margin-bottom:1rem">
+          <span class="card__tag">Fastest</span>
+          <h3>Message me directly</h3>
+          <p style="margin-bottom:1rem">Cambodians buy in the DMs — so do I. Reach me where you already are.</p>
+          <div style="display:grid;gap:.6rem">
+            <a class="btn btn--line" href="#">💬 Facebook Messenger</a>
+            <a class="btn btn--line" href="#">✈️ Telegram</a>
+            <a class="btn btn--line" href="#">🎵 TikTok</a>
+          </div>
+          <p style="font-family:var(--mono);font-size:.75rem;color:var(--slate);margin-top:1rem">Add your real profile links here.</p>
+        </div>
+        <div class="card">
+          <h3>REÂM clients</h3>
+          <p>Restaurant or café? Ask about a <strong>free growth audit</strong> — I'll show you where the tables are going.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot__brand"><a class="brand" href="index.html"><img src="assets/mark-blue.svg" alt="" style="width:32px;height:32px;border-radius:9px">Lyhour</a><p>Ouk Channlyhour (អ៊ុក ច័ន្ទលីហួ) — tech + marketing entrepreneur. I build the systems and grow the sales.</p></div>
+      <div class="foot__cols">
+        <div class="foot__col"><h4>Site</h4><a href="work.html">Work</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        <div class="foot__col"><h4>Follow</h4><a href="#">Facebook</a><a href="#">TikTok</a><a href="#">Telegram</a></div>
+        <div class="foot__col"><h4>Ventures</h4><a href="#">REÂM — F&B marketing</a><a href="work.html">Systems & POS</a></div>
+      </div>
+    </div>
+    <div class="foot__legal"><span>© 2026 Ouk Channlyhour</span><span>Phnom Penh · Khmer-first</span></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

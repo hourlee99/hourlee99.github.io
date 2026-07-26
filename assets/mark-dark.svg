@@ -1,0 +1,6 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lyhour mark, dark">
+  <rect width="512" height="512" rx="120" fill="#0E0E10"/>
+  <rect x="128" y="340" width="52" height="52" rx="14" fill="#12D08C"/>
+  <path d="M154 366 L366 154" stroke="#2F6BFF" stroke-width="46" stroke-linecap="round"/>
+  <path d="M300 154 L366 154 L366 220" stroke="#2F6BFF" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

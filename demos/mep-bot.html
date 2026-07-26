@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Service Manager — Maintenance Scheduling (demo)</title>
+<link rel="stylesheet" href="demo.css"></head>
+<body style="--accent:#2563EB">
+<div class="demo-ribbon">DEMO</div>
+<div class="app">
+  <aside class="sidebar dark">
+    <div class="brand"><div class="m">SM</div><b>Service Manager</b></div>
+    <div class="nav on" data-view="dashboard"><span class="d"></span>Dashboard</div>
+    <div class="nav" data-view="schedule"><span class="d"></span>Schedule</div>
+    <div class="nav" data-view="contracts"><span class="d"></span>Contracts</div>
+    <div class="nav" data-view="customers"><span class="d"></span>Customers</div>
+    <div class="nav" data-view="teams"><span class="d"></span>Teams</div>
+    <div class="nav" data-view="units"><span class="d"></span>Units</div>
+    <div class="foot">Maintenance Scheduling · Sample workspace</div>
+  </aside>
+  <div class="main">
+    <div class="topbar"><b>Dashboard</b><span class="sub">· Air-con maintenance</span>
+      <div class="right"><span class="btn solid">+ Schedule visit</span></div></div>
+    <div class="content">
+     <div data-panel="dashboard">
+      <div class="kpis">
+        <div class="kpi bad"><div class="l">Due soon (7d)</div><div class="v">12</div><div class="c warn">Assign teams</div></div>
+        <div class="kpi bad"><div class="l">Overdue</div><div class="v">3</div><div class="c bad">Action needed</div></div>
+        <div class="kpi"><div class="l">Unassigned</div><div class="v">5</div></div>
+        <div class="kpi ok"><div class="l">Done this week</div><div class="v">28</div></div>
+      </div>
+      <div class="cols c-32">
+        <div class="card"><h3>Upcoming service visits <span class="note">next 7 days</span></h3>
+          <table>
+            <thead><tr><th>Unit</th><th>Type</th><th>Date</th><th>Team</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Unit A-101</td><td>Contract · visit 2/4</td><td>Jul 19</td><td>Team A</td><td><span class="badge ok">Confirmed</span></td></tr>
+              <tr><td>Unit A-104</td><td>Contract · visit 1/4</td><td>Jul 20</td><td>Team B</td><td><span class="badge info">Assigned</span></td></tr>
+              <tr><td>Unit B-210</td><td>Ad-hoc repair</td><td>Jul 21</td><td>Team A</td><td><span class="badge warn">Due soon</span></td></tr>
+              <tr><td>Unit B-215</td><td>Contract · visit 3/4</td><td>Jul 15</td><td>—</td><td><span class="badge bad">Overdue</span></td></tr>
+              <tr><td>Unit C-302</td><td>Contract · visit 2/4</td><td>Jul 22</td><td>Team C</td><td><span class="badge info">Assigned</span></td></tr>
+              <tr><td>Unit C-308</td><td>Ad-hoc repair</td><td>Jul 23</td><td>—</td><td><span class="badge warn">Due soon</span></td></tr>
+              <tr><td>Unit D-410</td><td>Contract · visit 4/4</td><td>Jul 24</td><td>Team B</td><td><span class="badge ok">Confirmed</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card"><h3>Team workload <span class="note">this week</span></h3>
+          <div class="row-item"><div class="avatar">TA</div><div class="grow"><div class="t">Team A</div><div class="pbar"><i style="width:88%"></i></div></div><b>11</b></div>
+          <div class="row-item"><div class="avatar">TB</div><div class="grow"><div class="t">Team B</div><div class="pbar"><i style="width:64%"></i></div></div><b>8</b></div>
+          <div class="row-item"><div class="avatar">TC</div><div class="grow"><div class="t">Team C</div><div class="pbar"><i style="width:48%"></i></div></div><b>6</b></div>
+          <div class="row-item"><div class="avatar">TD</div><div class="grow"><div class="t">Team D</div><div class="pbar"><i style="width:24%"></i></div></div><b>3</b></div>
+          <p class="muted sm mt">🔔 Telegram reminders sent automatically.</p>
+        </div>
+      </div>
+     </div>
+
+     <div data-panel="schedule">
+      <div class="page-h"><h1>Schedule</h1><span class="spacer"></span><span class="btn solid">+ Schedule visit</span></div>
+      <div class="card">
+        <h3>Upcoming visits <span class="note">all teams</span></h3>
+        <table>
+          <thead><tr><th>Date</th><th>Unit</th><th>Type</th><th>Team</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Jul 19</td><td>Unit A-101</td><td>Contract · visit 2/4</td><td>Team A</td><td><span class="badge ok">Confirmed</span></td></tr>
+            <tr><td>Jul 20</td><td>Unit A-104</td><td>Contract · visit 1/4</td><td>Team B</td><td><span class="badge info">Assigned</span></td></tr>
+            <tr><td>Jul 21</td><td>Unit B-210</td><td>Ad-hoc repair</td><td>Team A</td><td><span class="badge warn">Due soon</span></td></tr>
+            <tr><td>Jul 22</td><td>Unit C-302</td><td>Contract · visit 2/4</td><td>Team C</td><td><span class="badge info">Assigned</span></td></tr>
+            <tr><td>Jul 23</td><td>Unit C-308</td><td>Ad-hoc repair</td><td>—</td><td><span class="badge warn">Due soon</span></td></tr>
+            <tr><td>Jul 24</td><td>Unit D-410</td><td>Contract · visit 4/4</td><td>Team B</td><td><span class="badge ok">Confirmed</span></td></tr>
+            <tr><td>Jul 25</td><td>Unit D-415</td><td>Contract · visit 3/4</td><td>Team D</td><td><span class="badge info">Assigned</span></td></tr>
+            <tr><td>Jul 26</td><td>Unit E-501</td><td>Ad-hoc repair</td><td>Team C</td><td><span class="badge ok">Confirmed</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+     </div>
+
+     <div data-panel="teams">
+      <div class="page-h"><h1>Teams</h1><span class="spacer"></span><span class="chip">4 active teams</span></div>
+      <div class="card">
+        <h3>Field teams <span class="note">visits this week</span></h3>
+        <div class="row-item"><div class="avatar">TA</div><div class="grow"><div class="t">Team A</div><div class="s">Sok · Dara · Vuthy</div><div class="pbar"><i style="width:88%"></i></div></div><b>11</b></div>
+        <div class="row-item"><div class="avatar">TB</div><div class="grow"><div class="t">Team B</div><div class="s">Rith · Chan</div><div class="pbar"><i style="width:64%"></i></div></div><b>8</b></div>
+        <div class="row-item"><div class="avatar">TC</div><div class="grow"><div class="t">Team C</div><div class="s">Nara · Pisey · Sovann</div><div class="pbar"><i style="width:48%"></i></div></div><b>6</b></div>
+        <div class="row-item"><div class="avatar">TD</div><div class="grow"><div class="t">Team D</div><div class="s">Kosal · Bopha</div><div class="pbar"><i style="width:24%"></i></div></div><b>3</b></div>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

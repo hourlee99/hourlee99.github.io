@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Ingella — CRM & Accounting (demo)</title>
+<link rel="stylesheet" href="demo.css"></head>
+<body style="--accent:#B7791F">
+<div class="demo-ribbon">DEMO</div>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="m">IE</div><b>Ingella</b></div>
+    <div class="nav on" data-view="dashboard"><span class="d"></span>Dashboard</div>
+    <div class="nav" data-view="clients"><span class="d"></span>Clients</div>
+    <div class="nav" data-view="projects"><span class="d"></span>Projects</div>
+    <div class="nav" data-view="documents"><span class="d"></span>Documents</div>
+    <div class="nav" data-view="accounting"><span class="d"></span>Accounting</div>
+    <div class="foot">CRM &amp; Accounting · Sample workspace</div>
+  </aside>
+  <div class="main">
+    <div class="topbar"><b>Dashboard</b><span class="sub">· Advertising &amp; Decoration</span>
+      <div class="right"><span class="chip">Reset sample data</span><span class="btn solid" style="padding:8px 14px">Export</span></div></div>
+    <div class="content">
+      <div data-panel="dashboard">
+      <div class="kpis">
+        <div class="kpi"><div class="l">Clients</div><div class="v">4</div></div>
+        <div class="kpi"><div class="l">Open projects</div><div class="v">3</div></div>
+        <div class="kpi accent"><div class="l">Invoice revenue</div><div class="v">$300.00</div></div>
+        <div class="kpi"><div class="l">Receivable</div><div class="v">$75.00</div><div class="c warn">1 pending</div></div>
+      </div>
+      <div class="cols c-32">
+        <div class="card"><h3>Current work <span class="note">3 active</span></h3>
+          <div class="row-item"><div class="grow"><div class="t">Real estate sales signage</div><div class="s">Key Real Estate · Signage Production</div></div><span class="badge mut">Quoted</span></div>
+          <div class="row-item"><div class="grow"><div class="t">Interior handover fit-out</div><div class="s">M2C · Decor Interior</div></div><span class="badge info">In Production</span></div>
+          <div class="row-item"><div class="grow"><div class="t">Private event production</div><div class="s">Event · Production</div></div><span class="badge ok">Approved</span></div>
+        </div>
+        <div class="card"><h3>Accounting split <span class="note">VAT vs non-VAT</span></h3>
+          <div class="row-item"><div class="grow"><div class="t">VAT invoice sales</div></div><b>$0.00</b></div>
+          <div class="row-item"><div class="grow"><div class="t">VAT output tax</div></div><b>$0.00</b></div>
+          <div class="row-item"><div class="grow"><div class="t">Non-VAT invoice sales</div></div><b>$300.00</b></div>
+        </div>
+      </div>
+      </div>
+
+      <div data-panel="clients" style="display:none">
+        <div class="page-h"><h1>Clients</h1><span class="spacer"></span><span class="btn solid" style="padding:8px 14px">Add client</span></div>
+        <div class="card">
+          <table>
+            <thead><tr><th>Client</th><th>Projects</th><th>Balance</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Key Real Estate</td><td>2</td><td>$75.00</td><td><span class="badge warn">Pending</span></td></tr>
+              <tr><td>M2C Interiors</td><td>1</td><td>$0.00</td><td><span class="badge ok">Paid</span></td></tr>
+              <tr><td>Sokha Events</td><td>1</td><td>$0.00</td><td><span class="badge ok">Paid</span></td></tr>
+              <tr><td>Angkor Trading Co.</td><td>0</td><td>$0.00</td><td><span class="badge mut">Lead</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div data-panel="projects" style="display:none">
+        <div class="page-h"><h1>Projects</h1><span class="spacer"></span><span class="btn solid" style="padding:8px 14px">New project</span></div>
+        <div class="card">
+          <table>
+            <thead><tr><th>Project</th><th>Client</th><th>Stage</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Real estate sales signage</td><td>Key Real Estate</td><td><span class="badge mut">Quoted</span></td><td>$75.00</td></tr>
+              <tr><td>Interior handover fit-out</td><td>M2C Interiors</td><td><span class="badge info">In Production</span></td><td>$180.00</td></tr>
+              <tr><td>Private event production</td><td>Sokha Events</td><td><span class="badge ok">Approved</span></td><td>$120.00</td></tr>
+              <tr><td>Showroom window graphics</td><td>Key Real Estate</td><td><span class="badge mut">Quoted</span></td><td>$60.00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

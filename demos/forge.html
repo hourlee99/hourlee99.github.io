@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>FORGE — Personal Trainer App (demo)</title>
+<link rel="stylesheet" href="demo.css"></head>
+<body style="--accent:#EAB308">
+<div class="demo-ribbon">DEMO</div>
+<div class="stage">
+  <div class="phone">
+    <div class="screen">
+      <div class="notch"></div>
+      <div style="background:#111114;color:#f3f4f6;height:100%;display:flex;flex-direction:column">
+       <div style="flex:1;overflow:auto;padding:20px">
+        <div data-tabpanel="workout">
+        <div style="display:flex;align-items:center;gap:8px;margin:18px 0 22px">
+          <b style="font-size:22px;letter-spacing:.02em;color:var(--accent)">FORGE</b>
+          <span style="margin-left:auto;font-size:12px;color:#9ca3af">Mon · Week 4</span>
+        </div>
+
+        <div style="font-size:13px;color:#9ca3af;margin-bottom:2px">Today's workout</div>
+        <div style="font-size:20px;font-weight:800;margin-bottom:18px">Lower Body · Strength</div>
+
+        <!-- exercise rows -->
+        <div style="display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #26262c;border-radius:12px;margin-bottom:10px;background:#17171b">
+          <div style="flex:1"><div style="font-size:15px;font-weight:700">Barbell Squat</div><div style="font-size:12px;color:#9ca3af;margin-top:2px">3 × 8 · 60kg</div></div>
+          <div style="width:26px;height:26px;border-radius:50%;background:var(--accent);color:#111114;display:grid;place-items:center;font-weight:800;font-size:14px">✓</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #26262c;border-radius:12px;margin-bottom:10px;background:#17171b">
+          <div style="flex:1"><div style="font-size:15px;font-weight:700">Romanian Deadlift</div><div style="font-size:12px;color:#9ca3af;margin-top:2px">3 × 10 · 50kg</div></div>
+          <div style="width:26px;height:26px;border-radius:50%;background:var(--accent);color:#111114;display:grid;place-items:center;font-weight:800;font-size:14px">✓</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #26262c;border-radius:12px;margin-bottom:10px;background:#17171b">
+          <div style="flex:1"><div style="font-size:15px;font-weight:700">Leg Press</div><div style="font-size:12px;color:#9ca3af;margin-top:2px">3 × 12 · 120kg</div></div>
+          <div style="width:26px;height:26px;border-radius:50%;border:2px solid #3a3a42"></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #26262c;border-radius:12px;margin-bottom:22px;background:#17171b">
+          <div style="flex:1"><div style="font-size:15px;font-weight:700">Standing Calf Raise</div><div style="font-size:12px;color:#9ca3af;margin-top:2px">4 × 15 · 40kg</div></div>
+          <div style="width:26px;height:26px;border-radius:50%;border:2px solid #3a3a42"></div>
+        </div>
+
+        <!-- macros -->
+        <div style="font-size:13px;color:#9ca3af;margin-bottom:10px">Macros today</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px">
+          <div style="border:1px solid #26262c;border-radius:12px;padding:14px 10px;text-align:center;background:#17171b">
+            <div style="font-size:20px;font-weight:800;color:var(--accent)">160g</div><div style="font-size:11px;color:#9ca3af;margin-top:3px">Protein</div></div>
+          <div style="border:1px solid #26262c;border-radius:12px;padding:14px 10px;text-align:center;background:#17171b">
+            <div style="font-size:20px;font-weight:800;color:var(--accent)">220g</div><div style="font-size:11px;color:#9ca3af;margin-top:3px">Carbs</div></div>
+          <div style="border:1px solid #26262c;border-radius:12px;padding:14px 10px;text-align:center;background:#17171b">
+            <div style="font-size:20px;font-weight:800;color:var(--accent)">60g</div><div style="font-size:11px;color:#9ca3af;margin-top:3px">Fat</div></div>
+        </div>
+
+        <div class="btn solid block" style="color:#111114">Start workout</div>
+        </div>
+
+        <div data-tabpanel="meals" style="display:none">
+          <div style="margin:18px 0 22px"><b style="font-size:22px;letter-spacing:.02em;color:var(--accent)">Meals</b><span style="margin-left:10px;font-size:12px;color:#9ca3af">1,840 / 2,200 kcal</span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:16px;border:1px solid #26262c;border-radius:12px;margin-bottom:12px;background:#17171b">
+            <div style="flex:1"><div style="font-size:15px;font-weight:700">Breakfast</div><div style="font-size:12px;color:#9ca3af;margin-top:2px">Oats, banana, whey</div></div>
+            <div style="font-weight:800;color:var(--accent)">520</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:16px;border:1px solid #26262c;border-radius:12px;margin-bottom:12px;background:#17171b">
+            <div style="flex:1"><div style="font-size:15px;font-weight:700">Lunch</div><div style="font-size:12px;color:#9ca3af;margin-top:2px">Chicken, rice, greens</div></div>
+            <div style="font-weight:800;color:var(--accent)">720</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:16px;border:1px solid #26262c;border-radius:12px;margin-bottom:12px;background:#17171b">
+            <div style="flex:1"><div style="font-size:15px;font-weight:700">Dinner</div><div style="font-size:12px;color:#9ca3af;margin-top:2px">Salmon, potato, salad</div></div>
+            <div style="font-weight:800;color:var(--accent)">600</div>
+          </div>
+          <div class="btn solid block" style="color:#111114;margin-top:8px">Log a meal</div>
+        </div>
+
+        <div data-tabpanel="progress" style="display:none">
+          <div style="margin:18px 0 22px"><b style="font-size:22px;letter-spacing:.02em;color:var(--accent)">Progress</b></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:22px">
+            <div style="border:1px solid #26262c;border-radius:12px;padding:16px;background:#17171b"><div style="font-size:26px;font-weight:800;color:var(--accent)">12🔥</div><div style="font-size:12px;color:#9ca3af;margin-top:4px">Day streak</div></div>
+            <div style="border:1px solid #26262c;border-radius:12px;padding:16px;background:#17171b"><div style="font-size:26px;font-weight:800">78.4kg</div><div style="font-size:12px;color:#9ca3af;margin-top:4px">Weight · −1.6 this mo</div></div>
+          </div>
+          <div style="font-size:13px;color:#9ca3af;margin-bottom:10px">Volume · last 7 days</div>
+          <div style="display:flex;align-items:flex-end;gap:8px;height:130px">
+            <div style="flex:1;height:55%;background:var(--accent);border-radius:6px 6px 0 0"></div>
+            <div style="flex:1;height:72%;background:var(--accent);border-radius:6px 6px 0 0"></div>
+            <div style="flex:1;height:40%;background:var(--accent);border-radius:6px 6px 0 0"></div>
+            <div style="flex:1;height:88%;background:var(--accent);border-radius:6px 6px 0 0"></div>
+            <div style="flex:1;height:60%;background:var(--accent);border-radius:6px 6px 0 0"></div>
+            <div style="flex:1;height:95%;background:var(--accent);border-radius:6px 6px 0 0"></div>
+            <div style="flex:1;height:50%;background:var(--accent);border-radius:6px 6px 0 0"></div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:8px;font-size:11px;color:#9ca3af">
+            <span style="flex:1;text-align:center">M</span><span style="flex:1;text-align:center">T</span><span style="flex:1;text-align:center">W</span><span style="flex:1;text-align:center">T</span><span style="flex:1;text-align:center">F</span><span style="flex:1;text-align:center">S</span><span style="flex:1;text-align:center">S</span>
+          </div>
+        </div>
+       </div>
+
+       <div style="display:flex;border-top:1px solid #26262c;background:#141418;padding:10px 6px 18px">
+         <div data-tab="workout" class="on" style="flex:1;text-align:center;cursor:pointer;font-size:11px;font-weight:600;padding:6px 0"><div style="font-size:18px">🏋️</div>Workout</div>
+         <div data-tab="meals" style="flex:1;text-align:center;cursor:pointer;font-size:11px;font-weight:600;color:#6b7280;padding:6px 0"><div style="font-size:18px">🍽️</div>Meals</div>
+         <div data-tab="progress" style="flex:1;text-align:center;cursor:pointer;font-size:11px;font-weight:600;color:#6b7280;padding:6px 0"><div style="font-size:18px">📈</div>Progress</div>
+       </div>
+       <style>[data-tab].on{color:var(--accent)!important}</style>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

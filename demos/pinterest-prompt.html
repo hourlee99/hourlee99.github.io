@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Pinterest Prompt (demo)</title>
+<link rel="stylesheet" href="demo.css"></head>
+<body style="--accent:#E60023;background:#0b0b0f">
+<div class="demo-ribbon">DEMO</div>
+<div class="card" style="background:#15161b;color:#e5e7eb;border-color:#262730;max-width:520px;margin:60px auto">
+  <h3 style="color:#fff;font-size:17px;margin-bottom:6px">Photo → prompt</h3>
+  <p class="sm" style="color:#9aa0ad;margin-bottom:18px">Turn any image into a ready-to-use AI prompt.</p>
+
+  <div style="border:2px dashed #3a3c47;border-radius:12px;padding:38px 20px;text-align:center;color:#9aa0ad;font-size:14px;background:#101119;margin-bottom:16px">
+    <div style="font-size:26px;margin-bottom:8px">⬆</div>
+    Drop, paste, or click to pick an image
+  </div>
+
+  <label class="sm" style="display:block;color:#9aa0ad;margin-bottom:6px">Model</label>
+  <div style="border:1px solid #2f3140;border-radius:10px;padding:11px 14px;background:#101119;color:#e5e7eb;font-size:14px;display:flex;align-items:center;margin-bottom:14px">
+    Midjourney v6 <span style="margin-left:auto;color:#9aa0ad">▾</span>
+  </div>
+
+  <label class="sm" style="display:block;color:#9aa0ad;margin-bottom:6px">Type</label>
+  <div style="display:flex;gap:8px;margin-bottom:18px">
+    <span data-tab="photographic" class="on" style="flex:1;text-align:center;border:1px solid #2f3140;border-radius:10px;padding:9px 0;background:#101119;color:#e5e7eb;font-size:13px;font-weight:600;cursor:pointer">Photographic</span>
+    <span data-tab="illustration" style="flex:1;text-align:center;border:1px solid #2f3140;border-radius:10px;padding:9px 0;background:#101119;color:#9aa0ad;font-size:13px;font-weight:600;cursor:pointer">Illustration</span>
+    <span data-tab="3d" style="flex:1;text-align:center;border:1px solid #2f3140;border-radius:10px;padding:9px 0;background:#101119;color:#9aa0ad;font-size:13px;font-weight:600;cursor:pointer">3D</span>
+  </div>
+
+  <span class="btn solid block">Generate prompt</span>
+
+  <div data-tabpanel="photographic" style="border:1px solid #2f3140;border-radius:10px;padding:14px 16px;background:#101119;color:#c7ccd6;font-size:13px;line-height:1.6;margin-top:18px">
+    A cozy latte on a rustic wooden table, soft morning window light, shallow depth of field, warm earthy tones, steam rising, editorial coffee photography, 35mm, high detail --ar 4:5 --style raw
+  </div>
+  <div data-tabpanel="illustration" style="border:1px solid #2f3140;border-radius:10px;padding:14px 16px;background:#101119;color:#c7ccd6;font-size:13px;line-height:1.6;margin-top:18px">
+    A cozy latte on a rustic wooden table, flat vector illustration, bold clean outlines, warm limited palette, soft cel shading, playful editorial poster style, minimal texture --ar 4:5 --niji 6
+  </div>
+  <div data-tabpanel="3d" style="border:1px solid #2f3140;border-radius:10px;padding:14px 16px;background:#101119;color:#c7ccd6;font-size:13px;line-height:1.6;margin-top:18px">
+    A cozy latte on a rustic wooden table, 3D render, octane, soft studio lighting, subsurface scattering on the foam, glossy ceramic, shallow depth of field, warm color grade, product hero shot --ar 4:5 --style raw
+  </div>
+
+  <style>[data-tab].on{border-color:var(--accent)!important;color:#fff!important;background:color-mix(in srgb,var(--accent) 22%,#101119)!important}</style>
+</div>
+<script src="demo.js"></script>
+</body></html>

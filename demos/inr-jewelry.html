@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>INR Jewelry (demo)</title>
+<link rel="stylesheet" href="demo.css">
+<style>
+  .store-nav [data-tab]{cursor:pointer;color:var(--mut);padding:4px 2px;border-bottom:2px solid transparent}
+  .store-nav [data-tab]:hover{color:var(--ink)}
+  .store-nav [data-tab].on{color:var(--ink);font-weight:700;border-bottom-color:var(--accent)}
+</style></head>
+<body style="--accent:#C6A15B">
+<div class="demo-ribbon">DEMO</div>
+<div class="store-nav">
+  <b>INR JEWELRY</b>
+  <span class="grow"></span>
+  <span class="on" data-tab="rings">Rings</span>
+  <span data-tab="necklaces">Necklaces</span>
+  <span data-tab="rings">Earrings</span>
+  <span class="chip" data-tab="cart">Cart</span>
+</div>
+<div data-tabpanel="rings">
+<div class="hero-store">
+  <div>
+    <h1>Timeless pieces, crafted to last</h1>
+    <p>Fine jewelry designed with restraint and made to be worn every day. Ethically sourced materials, finished by hand.</p>
+    <div class="btn solid">Explore collection</div>
+  </div>
+  <div class="ph" style="height:360px;border-radius:16px;background:linear-gradient(135deg,#f5ecd7,#e6cf9c,#c6a15b)"></div>
+</div>
+<div class="content">
+  <h3 style="font-size:18px;margin-bottom:16px">Featured</h3>
+  <div class="pgrid">
+    <div class="prod"><div class="ph"></div><div class="n">Gold Solitaire Ring</div><div class="p">$680</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Pearl Drop Necklace</div><div class="p">$320</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Diamond Stud Earrings</div><div class="p">$540</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Slim Gold Band</div><div class="p">$220</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Sapphire Pendant</div><div class="p">$460</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Hoop Earrings</div><div class="p">$120</div></div>
+  </div>
+</div>
+</div>
+
+<div data-tabpanel="necklaces" style="display:none">
+<div class="content">
+  <div class="page-h"><h1>Necklaces</h1><span class="spacer"></span><span class="muted sm">Hand-finished · ethically sourced gold</span></div>
+  <div class="pgrid">
+    <div class="prod"><div class="ph"></div><div class="n">Pearl Drop Necklace</div><div class="p">$320</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Sapphire Pendant</div><div class="p">$460</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Fine Gold Chain</div><div class="p">$180</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Emerald Locket</div><div class="p">$520</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Layered Choker</div><div class="p">$260</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Diamond Solitaire Pendant</div><div class="p">$740</div></div>
+  </div>
+</div>
+</div>
+
+<div data-tabpanel="cart" style="display:none">
+<div class="content">
+  <div class="page-h"><h1>Cart</h1><span class="spacer"></span><span class="muted sm">2 items · secure checkout</span></div>
+  <div class="cols c-32">
+    <div class="card">
+      <div class="row-item"><div class="ph" style="width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#f5ecd7,#c6a15b)"></div><div class="grow"><div class="t">Gold Solitaire Ring</div><div class="s">Size 6 · 18k gold</div></div><b>$680</b></div>
+      <div class="row-item"><div class="ph" style="width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#e6cf9c,#9c7b3c)"></div><div class="grow"><div class="t">Pearl Drop Necklace</div><div class="s">16" · freshwater pearl</div></div><b>$320</b></div>
+      <div class="mt muted sm">Gift wrapping and engraving available at checkout.</div>
+    </div>
+    <div class="card">
+      <h3>Order summary</h3>
+      <div class="sum" style="padding:0">
+        <div class="r"><span>Subtotal</span><span>$1,000</span></div>
+        <div class="r"><span>Insured shipping</span><span>Free</span></div>
+        <div class="r"><span>Tax</span><span>$50</span></div>
+        <div class="tot"><span>Total</span><span>$1,050</span></div>
+        <div class="btn solid block" data-tab="rings">Proceed to checkout</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="demo.js"></script>
+</body></html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>YumeGlow Store (demo)</title>
+<link rel="stylesheet" href="demo.css">
+<style>
+  .store-nav [data-tab]{cursor:pointer;color:var(--mut);padding:4px 2px;border-bottom:2px solid transparent}
+  .store-nav [data-tab]:hover{color:var(--ink)}
+  .store-nav [data-tab].on{color:var(--ink);font-weight:700;border-bottom-color:var(--accent)}
+</style></head>
+<body style="--accent:#DB2777">
+<div class="demo-ribbon">DEMO</div>
+<div class="store-nav">
+  <b>YumeGlow</b>
+  <span class="grow"></span>
+  <span class="on" data-tab="shop">Shop</span>
+  <span data-tab="product">Bestsellers</span>
+  <span data-tab="shop">About</span>
+  <span class="chip" data-tab="cart">Cart</span>
+</div>
+<div data-tabpanel="shop">
+<div class="hero-store">
+  <div>
+    <h1>Glow Essentials</h1>
+    <p>Clean, gentle skincare for your daily ritual — formulated to hydrate, brighten, and let your natural glow shine through.</p>
+    <div class="btn solid">Shop the collection</div>
+  </div>
+  <div class="ph" style="height:360px;border-radius:16px;background:linear-gradient(135deg,#fbcfe8,#f9a8d4,#db2777)"></div>
+</div>
+<div class="content">
+  <h3 style="font-size:18px;margin-bottom:16px">Bestsellers</h3>
+  <div class="pgrid">
+    <div class="prod"><div class="ph"></div><div class="n">Vitamin C Serum</div><div class="p">$24</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Hydrating Toner</div><div class="p">$16</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Gentle Cleanser</div><div class="p">$14</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Niacinamide Drops</div><div class="p">$18</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Rose Water Mist</div><div class="p">$12</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Lip Sleeping Mask</div><div class="p">$8</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">SPF 50 Sunscreen</div><div class="p">$20</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Overnight Glow Cream</div><div class="p">$22</div></div>
+  </div>
+</div>
+</div>
+
+<div data-tabpanel="product" style="display:none">
+<div class="content">
+  <div class="cols c-2" style="margin-bottom:26px">
+    <div class="ph" style="height:380px;border-radius:16px;background:linear-gradient(135deg,#fbcfe8,#f9a8d4,#db2777)"></div>
+    <div>
+      <div class="muted sm" style="margin-bottom:8px">Bestseller · Serums</div>
+      <h1 style="font-size:34px;letter-spacing:-.5px;margin-bottom:10px">Vitamin C Serum</h1>
+      <div style="font-size:26px;font-weight:800;color:var(--accent);margin-bottom:16px">$24</div>
+      <p class="muted" style="line-height:1.6;margin-bottom:20px">A lightweight 15% vitamin C serum that brightens dull skin, evens tone, and boosts your natural glow. Formulated with hyaluronic acid and vitamin E for gentle daily use — fragrance-free and suitable for all skin types.</p>
+      <div class="btn solid block" data-tab="cart" style="max-width:240px;margin-bottom:18px">Add to cart · $24</div>
+      <div class="cols c-2" style="max-width:360px">
+        <div class="muted sm">✓ Cruelty-free &amp; vegan</div>
+        <div class="muted sm">✓ Dermatologist tested</div>
+        <div class="muted sm">✓ 30-day glow guarantee</div>
+        <div class="muted sm">✓ Free shipping over $30</div>
+      </div>
+    </div>
+  </div>
+  <h3 style="font-size:18px;margin-bottom:16px">You may also like</h3>
+  <div class="pgrid">
+    <div class="prod"><div class="ph"></div><div class="n">Hydrating Toner</div><div class="p">$16</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Niacinamide Drops</div><div class="p">$18</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Rose Water Mist</div><div class="p">$12</div></div>
+    <div class="prod"><div class="ph"></div><div class="n">Overnight Glow Cream</div><div class="p">$22</div></div>
+  </div>
+</div>
+</div>
+
+<div data-tabpanel="cart" style="display:none">
+<div class="content">
+  <div class="page-h"><h1>Your cart</h1><span class="spacer"></span><span class="muted sm">3 items</span></div>
+  <div class="cols c-32">
+    <div class="card">
+      <div class="row-item"><div class="ph" style="width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#fbcfe8,#db2777)"></div><div class="grow"><div class="t">Vitamin C Serum</div><div class="s">Qty 1 · 30ml</div></div><b>$24</b></div>
+      <div class="row-item"><div class="ph" style="width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#e9d5ff,#a855f7)"></div><div class="grow"><div class="t">Hydrating Toner</div><div class="s">Qty 2 · 150ml</div></div><b>$32</b></div>
+      <div class="row-item"><div class="ph" style="width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#fde68a,#f59e0b)"></div><div class="grow"><div class="t">Lip Sleeping Mask</div><div class="s">Qty 1 · 20g</div></div><b>$8</b></div>
+    </div>
+    <div class="card">
+      <h3>Order summary</h3>
+      <div class="sum" style="padding:0">
+        <div class="r"><span>Subtotal</span><span>$64</span></div>
+        <div class="r"><span>Shipping</span><span>Free</span></div>
+        <div class="r"><span>Tax</span><span>$3.20</span></div>
+        <div class="tot"><span>Total</span><span>$67.20</span></div>
+        <div class="btn solid block" data-tab="shop">Checkout</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="demo.js"></script>
+</body></html>

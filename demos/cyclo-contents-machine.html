@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Cyclo Content Machine (demo)</title>
+<link rel="stylesheet" href="demo.css"></head>
+<body style="--accent:#A6392E">
+<div class="demo-ribbon">DEMO</div>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="m">CY</div><b>Cyclo</b></div>
+    <div class="nav on" data-view="kits"><span class="d"></span>Kits</div>
+    <div class="nav" data-view="assets"><span class="d"></span>Assets</div>
+    <div class="nav" data-view="schedule"><span class="d"></span>Schedule</div>
+    <div class="nav" data-view="brand"><span class="d"></span>Brand</div>
+    <div class="foot">Launch content kits · Sample workspace</div>
+  </aside>
+  <div class="main">
+    <div class="topbar"><b>Content Kit</b><span class="sub">· One brief → a full launch week</span>
+      <div class="right"><span class="chip">22 assets ready</span><span class="btn solid" style="padding:8px 14px">Export kit</span></div></div>
+    <div class="content">
+      <div data-panel="kits">
+      <div class="card" style="margin-bottom:22px">
+        <h3>Launch Week content kit <span class="note">22 ready-to-post assets from one brief</span></h3>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:2px">
+          <span class="chip">Runs: 7 → 15 Jul</span>
+          <span class="chip">Discount: 15%</span>
+          <span class="chip">Code: LAUNCH15</span>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:22px">
+        <h3>Posting schedule <span class="note">6 milestones</span></h3>
+        <table>
+          <thead><tr><th>Date</th><th>Post</th><th>Goal</th></tr></thead>
+          <tbody>
+            <tr><td>Mon 7 Jul</td><td>Teaser</td><td>Build curiosity</td></tr>
+            <tr><td>Wed 9 Jul</td><td>Countdown 3</td><td>Grow anticipation</td></tr>
+            <tr><td>Fri 11 Jul</td><td>Countdown 2 &amp; 1</td><td>Drive reminders</td></tr>
+            <tr><td>Sat 12 Jul</td><td>Launch day</td><td>Convert with code LAUNCH15</td></tr>
+            <tr><td>Mon 14 Jul</td><td>Best sellers</td><td>Show social proof</td></tr>
+            <tr><td>Tue 15 Jul</td><td>Final call</td><td>Close the offer</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="font-size:15px;margin-bottom:16px">Assets <span class="muted sm" style="font-weight:500">· generated thumbnails</span></h3>
+      <div class="pgrid">
+        <div class="prod"><div class="ph"></div><div class="n">Teaser 01</div><div class="sm muted">Story · Feed</div></div>
+        <div class="prod"><div class="ph"></div><div class="n">Countdown</div><div class="sm muted">Story · Feed</div></div>
+        <div class="prod"><div class="ph"></div><div class="n">Launch hero</div><div class="sm muted">Feed · Banner</div></div>
+        <div class="prod"><div class="ph"></div><div class="n">Final call</div><div class="sm muted">Story · Feed</div></div>
+      </div>
+      </div>
+
+      <div data-panel="assets" style="display:none">
+        <div class="page-h"><h1>Assets</h1><span class="spacer"></span><span class="muted sm">22 generated · showing 8</span></div>
+        <div class="pgrid">
+          <div class="prod"><div class="ph"></div><div class="n">Teaser 01</div><div class="sm muted">Story · Feed</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Teaser 02</div><div class="sm muted">Story · Feed</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Countdown 3</div><div class="sm muted">Story · Feed</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Countdown 2</div><div class="sm muted">Story · Feed</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Countdown 1</div><div class="sm muted">Story · Feed</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Launch hero</div><div class="sm muted">Feed · Banner</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Best sellers</div><div class="sm muted">Feed · Carousel</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Final call</div><div class="sm muted">Story · Feed</div></div>
+        </div>
+      </div>
+
+      <div data-panel="schedule" style="display:none">
+        <div class="page-h"><h1>Schedule</h1><span class="spacer"></span><span class="muted sm">6 milestones · 7 → 15 Jul</span></div>
+        <div class="card">
+          <table>
+            <thead><tr><th>Date</th><th>Post</th><th>Platform</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Mon 7 Jul</td><td>Teaser</td><td>Facebook</td><td><span class="badge ok">Posted</span></td></tr>
+              <tr><td>Wed 9 Jul</td><td>Countdown 3</td><td>TikTok</td><td><span class="badge ok">Posted</span></td></tr>
+              <tr><td>Fri 11 Jul</td><td>Countdown 2 &amp; 1</td><td>Facebook</td><td><span class="badge warn">Scheduled</span></td></tr>
+              <tr><td>Sat 12 Jul</td><td>Launch day</td><td>Facebook</td><td><span class="badge warn">Scheduled</span></td></tr>
+              <tr><td>Mon 14 Jul</td><td>Best sellers</td><td>TikTok</td><td><span class="badge warn">Scheduled</span></td></tr>
+              <tr><td>Tue 15 Jul</td><td>Final call</td><td>Facebook</td><td><span class="badge warn">Scheduled</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

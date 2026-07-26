@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Cyclo & Co (demo)</title>
+<link rel="stylesheet" href="demo.css">
+<style>
+  .store-nav [data-tab]{cursor:pointer;color:var(--mut);padding:4px 2px;border-bottom:2px solid transparent}
+  .store-nav [data-tab]:hover{color:var(--ink)}
+  .store-nav [data-tab].on{color:var(--ink);font-weight:700;border-bottom-color:var(--accent)}
+  .tp-fill{flex:1;display:flex;flex-direction:column;overflow:hidden}
+  .field{display:block;margin-bottom:12px}
+  .field label{display:block;font-size:12px;color:var(--mut);margin-bottom:5px;font-weight:600}
+  .field input{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:var(--r-sm);font-size:14px;color:var(--ink);background:var(--bg)}
+  .field.half{display:inline-block;width:calc(50% - 6px)}
+  .field.half + .field.half{margin-left:12px}
+</style></head>
+<body style="--accent:#111111">
+<div class="demo-ribbon">DEMO</div>
+<div class="app">
+  <div class="main">
+    <div class="store-nav">
+      <b>CYCLO &amp; CO.</b>
+      <span class="grow"></span>
+      <span class="on" data-tab="shop">Shop</span>
+      <span data-tab="shop">Best Sellers</span>
+      <span data-tab="about">About</span>
+      <span class="chip" data-tab="cart">Cart · 3</span>
+    </div>
+    <div class="tp-fill" data-tabpanel="shop">
+    <div class="split">
+      <div class="content">
+        <div class="page-h"><h1>Shop</h1><span class="spacer"></span><span class="muted sm">Everyday footwear, delivered across Cambodia</span></div>
+        <div class="pgrid">
+          <div class="prod"><div class="ph"></div><div class="n">Cyclo Penny</div><div class="p">$95</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Cyclo Loafer</div><div class="p">$110</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Cyclo Derby</div><div class="p">$125</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Cyclo Slip-On</div><div class="p">$80</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Cyclo Chelsea</div><div class="p">$130</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Cyclo Espadrille</div><div class="p">$85</div></div>
+        </div>
+      </div>
+      <div class="cart">
+        <h3>Cart · 3 items</h3>
+        <div class="items">
+          <div class="row-item"><span class="chip">1</span><div class="grow"><div class="t">Cyclo Penny</div><div class="s">Size 42 · Black</div></div><b>$95</b></div>
+          <div class="row-item"><span class="chip">1</span><div class="grow"><div class="t">Cyclo Loafer</div><div class="s">Size 43 · Cream</div></div><b>$110</b></div>
+          <div class="row-item"><span class="chip">1</span><div class="grow"><div class="t">Cyclo Slip-On</div><div class="s">Size 41 · Black</div></div><b>$80</b></div>
+        </div>
+        <div class="sum">
+          <div class="r"><span>Subtotal</span><span>$240</span></div>
+          <div class="r"><span>Delivery</span><span>Free</span></div>
+          <div class="tot"><span>Total</span><span>$240</span></div>
+          <div class="btn solid block" data-tab="cart">Checkout</div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="content" data-tabpanel="cart" style="display:none">
+      <div class="page-h"><h1>Checkout</h1><span class="spacer"></span><span class="muted sm">Secure checkout · sample order</span></div>
+      <div class="cols c-32">
+        <div class="card">
+          <h3>Shipping details</h3>
+          <div class="field"><label>Full name</label><input value="Sophea Chan"></div>
+          <div class="field"><label>Email</label><input value="sophea.chan@example.com"></div>
+          <div class="field"><label>Phone</label><input value="+855 12 345 678"></div>
+          <div class="field"><label>Address</label><input value="No. 42, Street 214, Sangkat Boeung Raing"></div>
+          <div class="field half"><label>City</label><input value="Phnom Penh"></div>
+          <div class="field half"><label>Postal code</label><input value="120210"></div>
+          <div class="field"><label>Delivery note (optional)</label><input value="Leave with reception"></div>
+          <div class="btn solid block" data-tab="shop" style="margin-top:6px">Place order · $240</div>
+        </div>
+        <div class="card">
+          <h3>Order summary</h3>
+          <div class="row-item"><span class="chip">1</span><div class="grow"><div class="t">Cyclo Penny</div><div class="s">Size 42 · Black</div></div><b>$95</b></div>
+          <div class="row-item"><span class="chip">1</span><div class="grow"><div class="t">Cyclo Loafer</div><div class="s">Size 43 · Cream</div></div><b>$110</b></div>
+          <div class="row-item"><span class="chip">1</span><div class="grow"><div class="t">Cyclo Slip-On</div><div class="s">Size 41 · Black</div></div><b>$80</b></div>
+          <div class="sum" style="padding:16px 0 0">
+            <div class="r"><span>Subtotal</span><span>$285</span></div>
+            <div class="r"><span>Delivery</span><span>Free</span></div>
+            <div class="r"><span>Discount</span><span>−$45</span></div>
+            <div class="tot"><span>Total</span><span>$240</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" data-tabpanel="about" style="display:none">
+      <div class="page-h"><h1>About Cyclo &amp; Co.</h1></div>
+      <div class="card" style="max-width:760px;margin-bottom:20px">
+        <h2 style="font-size:22px;margin-bottom:14px">Footwear for the everyday journey</h2>
+        <p class="muted" style="margin-bottom:14px;line-height:1.6">Cyclo &amp; Co. started in a small Phnom Penh workshop with one idea: shoes that keep up with real life. Named after the city's beloved cyclos, we build footwear meant to move — comfortable enough for the daily commute, refined enough for the room you walk into.</p>
+        <p class="muted" style="line-height:1.6">Every pair is finished by hand using ethically sourced leather and materials chosen to last. We keep our range small and considered, so each style earns its place in your rotation. When you buy a pair, we plant a tree along Cambodia's riverbanks.</p>
+      </div>
+      <div class="cols c-3">
+        <div class="card"><h3>Crafted to last</h3><p class="muted sm" style="line-height:1.6">Hand-finished construction and full-grain leather that ages beautifully with wear.</p></div>
+        <div class="card"><h3>Made responsibly</h3><p class="muted sm" style="line-height:1.6">Ethically sourced materials and fair workshops — quality you can feel good about.</p></div>
+        <div class="card"><h3>Delivered nationwide</h3><p class="muted sm" style="line-height:1.6">Free delivery across Cambodia, with easy 30-day returns on every order.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

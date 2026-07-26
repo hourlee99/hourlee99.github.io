@@ -1,0 +1,10 @@
+<svg width="760" height="200" viewBox="0 0 760 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lyhour wordmark, dark">
+  <!-- mark -->
+  <rect x="20" y="40" width="120" height="120" rx="28" fill="#2F6BFF"/>
+  <rect x="47" y="118" width="26" height="26" rx="7" fill="#12D08C"/>
+  <path d="M59 131 L110 80" stroke="#FAFAF8" stroke-width="11" stroke-linecap="round"/>
+  <path d="M94 80 L110 80 L110 96" stroke="#FAFAF8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- name -->
+  <text x="172" y="108" font-family="'Space Grotesk','Inter',sans-serif" font-size="66" font-weight="700" letter-spacing="-2" fill="#FAFAF8">Lyhour</text>
+  <text x="174" y="150" font-family="'JetBrains Mono',monospace" font-size="17" font-weight="500" letter-spacing="4" fill="#948A7B">OUK CHANNLYHOUR</text>
+</svg>

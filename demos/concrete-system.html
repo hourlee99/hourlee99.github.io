@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Concrete System — Business Dashboard (demo)</title>
+<link rel="stylesheet" href="demo.css"></head>
+<body style="--accent:#7C3AED">
+<div class="demo-ribbon">DEMO</div>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="m">C</div><b>Concrete OS</b></div>
+    <div class="nav on" data-view="dashboard"><span class="d"></span>Dashboard</div>
+    <div class="nav" data-view="deliveries"><span class="d"></span>Deliveries</div>
+    <div class="nav"><span class="d"></span>Missions</div>
+    <div class="nav"><span class="d"></span>Inventory</div>
+    <div class="nav"><span class="d"></span>Customers</div>
+    <div class="nav" data-view="accounting"><span class="d"></span>Accounting</div>
+    <div class="nav"><span class="d"></span>Reports</div>
+    <div class="foot">Concrete management · Sample workspace</div>
+  </aside>
+  <div class="main">
+    <div class="topbar"><b>Dashboard</b></div>
+    <div class="content">
+     <div data-panel="dashboard">
+      <div class="page-h"><h1>Dashboard</h1><span class="spacer"></span><span class="chip">Plant: KM3 · KM49</span></div>
+      <div class="kpis">
+        <div class="kpi"><div class="l">Sales (month)</div><div class="v">$48.2k</div><div class="c">▲ 12% vs last</div></div>
+        <div class="kpi"><div class="l">Receivable</div><div class="v">$9.7k</div><div class="c warn">4 overdue</div></div>
+        <div class="kpi"><div class="l">Deliveries today</div><div class="v">18</div><div class="c">6 in transit</div></div>
+        <div class="kpi"><div class="l">Fuel used</div><div class="v">420L</div><div class="c">▼ 3%</div></div>
+      </div>
+      <div class="cols c-32">
+        <div class="card">
+          <h3>Today's delivery missions <span class="note">18 total</span></h3>
+          <table>
+            <tr><th>Mission</th><th>Driver</th><th>Volume</th><th>Status</th></tr>
+            <tr><td>#M-2041 · KM3</td><td>Sokha</td><td>8 m³</td><td><span class="badge ok">Delivered</span></td></tr>
+            <tr><td>#M-2042 · KM49</td><td>Vuthy</td><td>6 m³</td><td><span class="badge info">In transit</span></td></tr>
+            <tr><td>#M-2043 · KM3</td><td>Rithy</td><td>10 m³</td><td><span class="badge warn">Loading</span></td></tr>
+            <tr><td>#M-2044 · KM49</td><td>Dara</td><td>7 m³</td><td><span class="badge info">In transit</span></td></tr>
+            <tr><td>#M-2045 · KM3</td><td>Sokha</td><td>9 m³</td><td><span class="badge mut">Scheduled</span></td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Monthly income</h3>
+          <div class="chart">
+            <div class="bar" style="height:52%"></div>
+            <div class="bar" style="height:68%"></div>
+            <div class="bar" style="height:44%"></div>
+            <div class="bar" style="height:80%"></div>
+            <div class="bar" style="height:62%"></div>
+            <div class="bar" style="height:92%"></div>
+          </div>
+          <div class="chart-x"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span></div>
+        </div>
+      </div>
+     </div>
+
+     <div data-panel="deliveries" style="display:none">
+      <div class="page-h"><h1>Deliveries</h1><span class="spacer"></span><span class="chip">18 today · 6 in transit</span><span class="btn solid">+ New mission</span></div>
+      <div class="card"><h3>All deliveries <span class="note">18 total</span></h3>
+        <table>
+          <thead><tr><th>Mission #</th><th>Driver</th><th>Plant</th><th>Volume</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>#M-2041</td><td>Sokha</td><td>KM3</td><td>8 m³</td><td><span class="badge ok">Delivered</span></td></tr>
+            <tr><td>#M-2042</td><td>Vuthy</td><td>KM49</td><td>6 m³</td><td><span class="badge info">In transit</span></td></tr>
+            <tr><td>#M-2043</td><td>Rithy</td><td>KM3</td><td>10 m³</td><td><span class="badge warn">Loading</span></td></tr>
+            <tr><td>#M-2044</td><td>Dara</td><td>KM49</td><td>7 m³</td><td><span class="badge info">In transit</span></td></tr>
+            <tr><td>#M-2045</td><td>Sokha</td><td>KM3</td><td>9 m³</td><td><span class="badge mut">Scheduled</span></td></tr>
+            <tr><td>#M-2046</td><td>Vuthy</td><td>KM49</td><td>5 m³</td><td><span class="badge ok">Delivered</span></td></tr>
+            <tr><td>#M-2047</td><td>Rithy</td><td>KM3</td><td>12 m³</td><td><span class="badge mut">Scheduled</span></td></tr>
+            <tr><td>#M-2048</td><td>Dara</td><td>KM49</td><td>8 m³</td><td><span class="badge info">In transit</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+     </div>
+
+     <div data-panel="accounting" style="display:none">
+      <div class="page-h"><h1>Accounting</h1><span class="spacer"></span><span class="chip">This month</span></div>
+      <div class="card"><h3>Chart of accounts <span class="note">sample balances</span></h3>
+        <div class="row-item"><div class="grow"><div class="t">Cash</div><div class="s">Asset · 1000</div></div><b>$14,250</b></div>
+        <div class="row-item"><div class="grow"><div class="t">Accounts receivable</div><div class="s">Asset · 1100</div></div><b>$9,700</b></div>
+        <div class="row-item"><div class="grow"><div class="t">Sales revenue</div><div class="s">Income · 4000</div></div><b>$48,200</b></div>
+        <div class="row-item"><div class="grow"><div class="t">Fuel expense</div><div class="s">Expense · 5200</div></div><b>$3,180</b></div>
+        <div class="row-item"><div class="grow"><div class="t">Materials expense</div><div class="s">Expense · 5100</div></div><b>$21,400</b></div>
+        <div class="row-item"><div class="grow"><div class="t">Payroll</div><div class="s">Expense · 5300</div></div><b>$8,600</b></div>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

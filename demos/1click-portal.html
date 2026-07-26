@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>1 Click Away (demo)</title>
+<link rel="stylesheet" href="demo.css"></head>
+<body style="--accent:#F59E0B">
+<div class="demo-ribbon">DEMO</div>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="m">1C</div><b>1 Click Away</b></div>
+    <div class="nav on" data-view="sourcing"><span class="d"></span>Sourcing</div>
+    <div class="nav" data-view="catalog"><span class="d"></span>Catalog</div>
+    <div class="nav" data-view="orders"><span class="d"></span>Orders</div>
+    <div class="nav" data-view="team"><span class="d"></span>Team</div>
+    <div class="nav" data-view="settings"><span class="d"></span>Settings</div>
+    <div class="foot">Product sourcing console · Sample workspace</div>
+  </aside>
+  <div class="main">
+    <div class="topbar"><b>Sourcing</b><span class="sub">· Showing 1–24 of 557 products</span>
+      <div class="right"><span class="chip"><span class="dot"></span>Live</span></div></div>
+    <div class="content">
+      <div data-panel="sourcing">
+      <div style="display:flex;gap:10px;margin-bottom:16px">
+        <input placeholder="Search products, brands, SKUs…" style="width:100%;padding:14px;border:1px solid var(--line);border-radius:10px">
+        <div class="btn solid">Search</div>
+      </div>
+      <div style="display:flex;gap:10px;margin-bottom:22px">
+        <span class="chip">Brand: All</span>
+        <span class="chip">Size: 42 / US 9</span>
+        <span class="chip">Availability: Any</span>
+      </div>
+      <div class="pgrid">
+        <div class="prod"><div class="ph"></div><div class="n">Disney x adidas ULT J</div><div class="sm muted">Kids' Running Shoes</div><div class="p">From $74.20</div><div class="sm muted">8 variants · 6 photos</div></div>
+        <div class="prod"><div class="ph"></div><div class="n">Nova Trail GTX</div><div class="sm muted">Men's Hiking Shoes</div><div class="p">From $112.00</div><div class="sm muted">6 variants · 5 photos</div></div>
+        <div class="prod"><div class="ph"></div><div class="n">Aero Runner 2</div><div class="sm muted">Women's Running Shoes</div><div class="p">From $88.50</div><div class="sm muted">10 variants · 7 photos</div></div>
+        <div class="prod"><div class="ph"></div><div class="n">Court Classic Low</div><div class="sm muted">Unisex Sneakers</div><div class="p">From $65.00</div><div class="sm muted">12 variants · 8 photos</div></div>
+        <div class="prod"><div class="ph"></div><div class="n">Flex Knit Slip-On</div><div class="sm muted">Women's Casual Shoes</div><div class="p">From $54.90</div><div class="sm muted">7 variants · 4 photos</div></div>
+        <div class="prod"><div class="ph"></div><div class="n">Terra Boot Mid</div><div class="sm muted">Men's Outdoor Boots</div><div class="p">From $129.00</div><div class="sm muted">5 variants · 6 photos</div></div>
+        <div class="prod"><div class="ph"></div><div class="n">Pulse Trainer X</div><div class="sm muted">Men's Training Shoes</div><div class="p">From $96.40</div><div class="sm muted">9 variants · 5 photos</div></div>
+        <div class="prod"><div class="ph"></div><div class="n">Mini Sprint J</div><div class="sm muted">Kids' Running Shoes</div><div class="p">From $48.20</div><div class="sm muted">6 variants · 4 photos</div></div>
+      </div>
+      </div>
+
+      <div data-panel="orders" style="display:none">
+        <div class="page-h"><h1>Orders</h1><span class="spacer"></span><span class="btn solid" style="padding:8px 14px">New order</span></div>
+        <div class="card">
+          <table>
+            <thead><tr><th>Order #</th><th>Product</th><th>Qty</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>#SO-1042</td><td>Nova Trail GTX</td><td>24</td><td><span class="badge ok">Received</span></td></tr>
+              <tr><td>#SO-1041</td><td>Aero Runner 2</td><td>36</td><td><span class="badge info">Ordered</span></td></tr>
+              <tr><td>#SO-1040</td><td>Court Classic Low</td><td>48</td><td><span class="badge info">Ordered</span></td></tr>
+              <tr><td>#SO-1039</td><td>Disney x adidas ULT J</td><td>18</td><td><span class="badge warn">Requested</span></td></tr>
+              <tr><td>#SO-1038</td><td>Terra Boot Mid</td><td>12</td><td><span class="badge warn">Requested</span></td></tr>
+              <tr><td>#SO-1037</td><td>Pulse Trainer X</td><td>30</td><td><span class="badge ok">Received</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div data-panel="team" style="display:none">
+        <div class="page-h"><h1>Team</h1><span class="spacer"></span><span class="btn solid" style="padding:8px 14px">Invite member</span></div>
+        <div class="card">
+          <div class="row-item"><div class="avatar">SC</div><div class="grow"><div class="t">Sopheak Chan</div><div class="s">Sourcing Lead</div></div></div>
+          <div class="row-item"><div class="avatar">RV</div><div class="grow"><div class="t">Rithy Vong</div><div class="s">Catalog Manager</div></div></div>
+          <div class="row-item"><div class="avatar">MP</div><div class="grow"><div class="t">Mealea Prom</div><div class="s">Orders Coordinator</div></div></div>
+          <div class="row-item"><div class="avatar">DK</div><div class="grow"><div class="t">Dara Keo</div><div class="s">Quality Inspector</div></div></div>
+          <div class="row-item"><div class="avatar">LS</div><div class="grow"><div class="t">Lida Sok</div><div class="s">Account Admin</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

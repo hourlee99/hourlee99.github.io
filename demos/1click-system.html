@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>1Click System — Business Ops (demo)</title>
+<link rel="stylesheet" href="demo.css"></head>
+<body style="--accent:#4F46E5">
+<div class="demo-ribbon">DEMO</div>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="m">1C</div><b>1Click System</b></div>
+    <div class="nav on" data-view="dashboard"><span class="d"></span>Dashboard</div>
+    <div class="nav" data-view="orders"><span class="d"></span>Orders</div>
+    <div class="nav" data-view="products"><span class="d"></span>Products</div>
+    <div class="nav"><span class="d"></span>Members</div>
+    <div class="nav"><span class="d"></span>Reports</div>
+    <div class="nav"><span class="d"></span>Settings</div>
+    <div class="foot">Business Ops · Sample workspace</div>
+  </aside>
+  <div class="main">
+    <div class="topbar"><b>Dashboard</b><span class="sub">· Sample Shop</span>
+      <div class="right"><span class="chip">Today</span><span class="btn solid" style="padding:8px 14px">+ New order</span></div></div>
+    <div class="content">
+     <div data-panel="dashboard">
+      <div class="kpis">
+        <div class="kpi accent"><div class="l">Today's sales</div><div class="v">$412.50</div><div class="c">+8% vs yesterday</div></div>
+        <div class="kpi"><div class="l">Orders</div><div class="v">37</div></div>
+        <div class="kpi"><div class="l">Low-stock items</div><div class="v">5</div><div class="c warn">Reorder soon</div></div>
+        <div class="kpi"><div class="l">Members</div><div class="v">214</div></div>
+      </div>
+      <div class="cols c-32">
+        <div class="card"><h3>Recent orders <span class="note">37 today</span></h3>
+          <table>
+            <thead><tr><th>Order #</th><th>Items</th><th>Total</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>#1042</td><td>3</td><td>$24.00</td><td><span class="badge ok">Paid</span></td></tr>
+              <tr><td>#1041</td><td>1</td><td>$8.50</td><td><span class="badge warn">Preparing</span></td></tr>
+              <tr><td>#1040</td><td>5</td><td>$61.00</td><td><span class="badge info">Done</span></td></tr>
+              <tr><td>#1039</td><td>2</td><td>$17.75</td><td><span class="badge ok">Paid</span></td></tr>
+              <tr><td>#1038</td><td>4</td><td>$39.20</td><td><span class="badge warn">Preparing</span></td></tr>
+              <tr><td>#1037</td><td>1</td><td>$12.00</td><td><span class="badge info">Done</span></td></tr>
+              <tr><td>#1036</td><td>6</td><td>$74.50</td><td><span class="badge ok">Paid</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card"><h3>Top products <span class="note">units sold</span></h3>
+          <div class="row-item"><div class="grow"><div class="t">Sample Item A</div><div class="s">142 units sold</div><div class="pbar"><i style="width:92%"></i></div></div></div>
+          <div class="row-item"><div class="grow"><div class="t">Sample Item B</div><div class="s">118 units sold</div><div class="pbar"><i style="width:76%"></i></div></div></div>
+          <div class="row-item"><div class="grow"><div class="t">Sample Item C</div><div class="s">97 units sold</div><div class="pbar"><i style="width:62%"></i></div></div></div>
+          <div class="row-item"><div class="grow"><div class="t">Sample Item D</div><div class="s">63 units sold</div><div class="pbar"><i style="width:41%"></i></div></div></div>
+          <div class="row-item"><div class="grow"><div class="t">Sample Item E</div><div class="s">38 units sold</div><div class="pbar"><i style="width:25%"></i></div></div></div>
+        </div>
+      </div>
+     </div>
+
+     <div data-panel="orders" style="display:none">
+      <div class="page-h"><h1>Orders</h1><span class="spacer"></span><span class="chip">Today · 37 orders</span><span class="btn solid" style="padding:8px 14px">+ New order</span></div>
+      <div class="card"><h3>All orders <span class="note">37 today</span></h3>
+        <table>
+          <thead><tr><th>Order #</th><th>Customer</th><th>Items</th><th>Total</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>#1042</td><td>Sample Customer 1</td><td>3</td><td>$24.00</td><td><span class="badge ok">Paid</span></td></tr>
+            <tr><td>#1041</td><td>Sample Customer 2</td><td>1</td><td>$8.50</td><td><span class="badge warn">Preparing</span></td></tr>
+            <tr><td>#1040</td><td>Sample Customer 3</td><td>5</td><td>$61.00</td><td><span class="badge info">Done</span></td></tr>
+            <tr><td>#1039</td><td>Sample Customer 4</td><td>2</td><td>$17.75</td><td><span class="badge ok">Paid</span></td></tr>
+            <tr><td>#1038</td><td>Sample Customer 5</td><td>4</td><td>$39.20</td><td><span class="badge warn">Preparing</span></td></tr>
+            <tr><td>#1037</td><td>Sample Customer 6</td><td>1</td><td>$12.00</td><td><span class="badge info">Done</span></td></tr>
+            <tr><td>#1036</td><td>Sample Customer 7</td><td>6</td><td>$74.50</td><td><span class="badge ok">Paid</span></td></tr>
+            <tr><td>#1035</td><td>Sample Customer 8</td><td>2</td><td>$19.00</td><td><span class="badge bad">Refunded</span></td></tr>
+            <tr><td>#1034</td><td>Sample Customer 9</td><td>3</td><td>$28.40</td><td><span class="badge info">Done</span></td></tr>
+            <tr><td>#1033</td><td>Sample Customer 10</td><td>1</td><td>$9.75</td><td><span class="badge ok">Paid</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+     </div>
+
+     <div data-panel="products" style="display:none">
+      <div class="page-h"><h1>Products</h1><span class="spacer"></span><span class="chip">142 SKUs</span><span class="btn solid" style="padding:8px 14px">+ Add product</span></div>
+      <div class="card"><h3>Inventory <span class="note">5 low-stock</span></h3>
+        <table>
+          <thead><tr><th>Product</th><th>Category</th><th>Stock</th><th>Price</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Sample Item A</td><td>Drinks</td><td>124</td><td>$3.50</td><td><span class="badge ok">In stock</span></td></tr>
+            <tr><td>Sample Item B</td><td>Snacks</td><td>8</td><td>$2.00</td><td><span class="badge warn">Low stock</span></td></tr>
+            <tr><td>Sample Item C</td><td>Bakery</td><td>56</td><td>$4.25</td><td><span class="badge ok">In stock</span></td></tr>
+            <tr><td>Sample Item D</td><td>Drinks</td><td>3</td><td>$1.75</td><td><span class="badge warn">Low stock</span></td></tr>
+            <tr><td>Sample Item E</td><td>Grocery</td><td>0</td><td>$5.00</td><td><span class="badge bad">Out of stock</span></td></tr>
+            <tr><td>Sample Item F</td><td>Snacks</td><td>91</td><td>$1.20</td><td><span class="badge ok">In stock</span></td></tr>
+            <tr><td>Sample Item G</td><td>Bakery</td><td>6</td><td>$3.00</td><td><span class="badge warn">Low stock</span></td></tr>
+            <tr><td>Sample Item H</td><td>Grocery</td><td>210</td><td>$0.90</td><td><span class="badge ok">In stock</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

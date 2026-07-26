@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Café Membership — Cashier Dashboard (demo)</title>
+<link rel="stylesheet" href="demo.css"></head>
+<body style="--accent:#B45309">
+<div class="demo-ribbon">DEMO</div>
+<div class="app">
+  <div class="main">
+    <div class="topbar">
+      <div class="logo">☕</div><b>Sample Café</b><span class="sub">· Cashier Dashboard</span>
+      <div class="right"><span class="chip"><span class="dot"></span>Connected</span></div>
+    </div>
+    <div class="content">
+      <div class="cols c-32">
+        <div class="kanban">
+          <div data-col>
+            <h4>New <b>2</b></h4>
+            <div data-drop>
+            <div class="card" data-card style="padding:14px;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;font-weight:700;font-size:13px;margin-bottom:8px"><span>#218</span><span class="muted" style="font-weight:500">2 min</span></div>
+              <div class="s muted" style="font-size:12px;line-height:1.7">1× Iced Latte<br>1× Croissant</div>
+              <span class="btn solid block" data-advance style="margin-top:10px;padding:8px;font-size:12px">Start preparing →</span>
+            </div>
+            <div class="card" data-card style="padding:14px;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;font-weight:700;font-size:13px;margin-bottom:8px"><span>#219</span><span class="muted" style="font-weight:500">just now</span></div>
+              <div class="s muted" style="font-size:12px;line-height:1.7">2× Cappuccino</div>
+              <span class="btn solid block" data-advance style="margin-top:10px;padding:8px;font-size:12px">Start preparing →</span>
+            </div>
+            </div>
+          </div>
+          <div data-col>
+            <h4>Preparing <b>2</b></h4>
+            <div data-drop>
+            <div class="card" data-card style="padding:14px;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;font-weight:700;font-size:13px;margin-bottom:8px"><span>#216</span><span class="muted" style="font-weight:500">4 min</span></div>
+              <div class="s muted" style="font-size:12px;line-height:1.7">1× Cold Brew<br>1× Muffin</div>
+              <span class="btn line block" data-advance style="margin-top:10px;padding:8px;font-size:12px">Mark ready →</span>
+            </div>
+            <div class="card" data-card style="padding:14px;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;font-weight:700;font-size:13px;margin-bottom:8px"><span>#217</span><span class="muted" style="font-weight:500">3 min</span></div>
+              <div class="s muted" style="font-size:12px;line-height:1.7">1× Matcha Latte</div>
+              <span class="btn line block" data-advance style="margin-top:10px;padding:8px;font-size:12px">Mark ready →</span>
+            </div>
+            </div>
+          </div>
+          <div data-col>
+            <h4>Ready <b>2</b></h4>
+            <div data-drop>
+            <div class="card" data-card style="padding:14px;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;font-weight:700;font-size:13px;margin-bottom:8px"><span>#214</span><span class="badge ok">done</span></div>
+              <div class="s muted" style="font-size:12px;line-height:1.7">1× Americano</div>
+              <span class="btn solid block" data-advance style="margin-top:10px;padding:8px;font-size:12px">Complete ✓</span>
+            </div>
+            <div class="card" data-card style="padding:14px;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;font-weight:700;font-size:13px;margin-bottom:8px"><span>#215</span><span class="badge ok">done</span></div>
+              <div class="s muted" style="font-size:12px;line-height:1.7">1× Latte · 1× Cookie</div>
+              <span class="btn solid block" data-advance style="margin-top:10px;padding:8px;font-size:12px">Complete ✓</span>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="margin-bottom:16px">
+            <h3>Member checking out</h3>
+            <div style="background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 45%,#000));color:#fff;border-radius:14px;padding:18px;margin-bottom:6px">
+              <div style="font-size:16px;font-weight:700">Member · Gold</div>
+              <div style="font-size:12px;opacity:.85;margin-bottom:14px">Loyalty · earns 1pt / $1</div>
+              <div style="display:flex;justify-content:space-between;align-items:flex-end">
+                <b style="font-size:30px;font-weight:800">138</b><span style="font-size:12px;opacity:.85">12 pts to next reward</span>
+              </div>
+              <div class="pbar" style="background:rgba(255,255,255,.25);margin-top:12px"><i style="width:72%;background:#fff"></i></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Today</h3>
+            <div class="row-item"><div class="grow"><div class="t">Orders today</div></div><b>84</b></div>
+            <div class="row-item"><div class="grow"><div class="t">Avg prep</div></div><b>3.4 min</b></div>
+            <div class="row-item"><div class="grow"><div class="t">Repeat members</div></div><b>41%</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

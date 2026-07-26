@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Telegram Adder — Audience Growth (demo)</title>
+<link rel="stylesheet" href="demo.css"></head>
+<body style="--accent:#229ED9">
+<div class="demo-ribbon">DEMO</div>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="m">TG</div><b>Telegram Adder</b></div>
+    <div class="nav on" data-view="dashboard"><span class="d"></span>Dashboard</div>
+    <div class="nav"><span class="d"></span>Campaigns</div>
+    <div class="nav" data-view="accounts"><span class="d"></span>Accounts</div>
+    <div class="nav"><span class="d"></span>Targets</div>
+    <div class="nav" data-view="logs"><span class="d"></span>Logs</div>
+    <div class="foot">Audience Growth · Sample workspace</div>
+  </aside>
+  <div class="main">
+    <div class="topbar"><b>Dashboard</b><span class="sub">· Sample workspace</span>
+      <div class="right"><span class="chip"><span class="dot"></span>6 workers online</span><span class="btn solid" style="padding:8px 14px">+ New campaign</span></div></div>
+    <div class="content">
+     <div data-panel="dashboard">
+      <div class="kpis">
+        <div class="kpi accent"><div class="l">Members added today</div><div class="v">318</div><div class="c">+42 last hour</div></div>
+        <div class="kpi"><div class="l">Active campaigns</div><div class="v">3</div></div>
+        <div class="kpi ok"><div class="l">Success rate</div><div class="v">92%</div></div>
+        <div class="kpi"><div class="l">Worker accounts</div><div class="v">6</div></div>
+      </div>
+      <div class="cols c-32">
+        <div class="card"><h3>Campaigns <span class="note">3 active</span></h3>
+          <table>
+            <thead><tr><th>Campaign</th><th>Target group</th><th>Added</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Campaign A</td><td>Sample Group A</td><td>142</td><td><span class="badge ok">Running</span></td></tr>
+              <tr><td>Campaign B</td><td>Sample Group B</td><td>98</td><td><span class="badge ok">Running</span></td></tr>
+              <tr><td>Campaign C</td><td>Sample Group C</td><td>78</td><td><span class="badge warn">Paused</span></td></tr>
+              <tr><td>Campaign D</td><td>Sample Group D</td><td>54</td><td><span class="badge info">Done</span></td></tr>
+              <tr><td>Campaign E</td><td>Sample Group E</td><td>41</td><td><span class="badge info">Done</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card"><h3>Safety <span class="note">protection on</span></h3>
+          <div class="row-item"><div class="grow"><div class="t">Rate limit</div></div><b>40 / hr</b></div>
+          <div class="row-item"><div class="grow"><div class="t">Warm-up</div></div><span class="badge ok">On</span></div>
+          <div class="row-item"><div class="grow"><div class="t">Cooldown</div></div><span class="badge info">Auto</span></div>
+          <p class="muted sm mt">Respects Telegram rate limits to keep accounts safe.</p>
+        </div>
+      </div>
+     </div>
+
+     <div data-panel="accounts" style="display:none">
+      <div class="page-h"><h1>Worker accounts</h1><span class="spacer"></span><span class="chip"><span class="dot"></span>6 online</span><span class="btn solid">+ Add account</span></div>
+      <div class="card"><h3>Accounts <span class="note">6 workers</span></h3>
+        <table>
+          <thead><tr><th>Account</th><th>Status</th><th>Added today</th></tr></thead>
+          <tbody>
+            <tr><td>@sample_worker_01</td><td><span class="badge ok">Active</span></td><td>64</td></tr>
+            <tr><td>@sample_worker_02</td><td><span class="badge ok">Active</span></td><td>58</td></tr>
+            <tr><td>@sample_worker_03</td><td><span class="badge warn">Warming</span></td><td>21</td></tr>
+            <tr><td>@sample_worker_04</td><td><span class="badge ok">Active</span></td><td>72</td></tr>
+            <tr><td>@sample_worker_05</td><td><span class="badge info">Cooldown</span></td><td>0</td></tr>
+            <tr><td>@sample_worker_06</td><td><span class="badge warn">Warming</span></td><td>19</td></tr>
+          </tbody>
+        </table>
+      </div>
+     </div>
+
+     <div data-panel="logs" style="display:none">
+      <div class="page-h"><h1>Activity log</h1><span class="spacer"></span><span class="chip">Live</span></div>
+      <div class="card"><h3>Recent activity <span class="note">today</span></h3>
+        <div class="row-item"><div class="grow"><div class="t">Added 12 members to Sample Group A</div></div><span class="s">10:42</span></div>
+        <div class="row-item"><div class="grow"><div class="t">Added 8 members to Sample Group B</div></div><span class="s">10:38</span></div>
+        <div class="row-item"><div class="grow"><div class="t">@sample_worker_05 entered cooldown</div></div><span class="s">10:31</span></div>
+        <div class="row-item"><div class="grow"><div class="t">Added 15 members to Sample Group A</div></div><span class="s">10:24</span></div>
+        <div class="row-item"><div class="grow"><div class="t">@sample_worker_03 finished warm-up</div></div><span class="s">10:12</span></div>
+        <div class="row-item"><div class="grow"><div class="t">Added 9 members to Sample Group C</div></div><span class="s">10:03</span></div>
+        <div class="row-item"><div class="grow"><div class="t">Campaign C paused by rate limit</div></div><span class="s">09:57</span></div>
+        <div class="row-item"><div class="grow"><div class="t">Added 11 members to Sample Group B</div></div><span class="s">09:48</span></div>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

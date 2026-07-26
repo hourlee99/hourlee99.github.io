@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>AutoBoost FB — Ads Automation (demo)</title>
+<link rel="stylesheet" href="demo.css"></head>
+<body style="--accent:#2563EB">
+<div class="demo-ribbon">DEMO</div>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="m">AB</div><b>AutoBoost FB</b></div>
+    <div class="nav on" data-view="dashboard"><span class="d"></span>Dashboard</div>
+    <div class="nav" data-view="boosts"><span class="d"></span>Boosts</div>
+    <div class="nav"><span class="d"></span>Campaigns</div>
+    <div class="nav"><span class="d"></span>Pages</div>
+    <div class="nav" data-view="insights"><span class="d"></span>Insights</div>
+    <div class="foot">Ads Automation · Sample workspace</div>
+  </aside>
+  <div class="main">
+    <div class="topbar"><b>Dashboard</b><span class="sub">· Sample Page</span>
+      <div class="right"><span class="chip"><span class="dot"></span>Page connected</span><span class="btn solid" style="padding:8px 14px">+ New boost</span></div></div>
+    <div class="content">
+     <div data-panel="dashboard">
+      <div class="kpis">
+        <div class="kpi accent"><div class="l">Active boosts</div><div class="v">6</div></div>
+        <div class="kpi"><div class="l">Reach today</div><div class="v">42.1k</div><div class="c">+14% vs avg</div></div>
+        <div class="kpi"><div class="l">Spend (7d)</div><div class="v">$128</div></div>
+        <div class="kpi"><div class="l">Cost / result</div><div class="v">$0.07</div><div class="c">Below target</div></div>
+      </div>
+      <div class="cols c-32">
+        <div class="card"><h3>Boosted posts <span class="note">6 active</span></h3>
+          <table>
+            <thead><tr><th>Post</th><th>Objective</th><th>Reach</th><th>Spend</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Sample Post A</td><td>Engagement</td><td>12.4k</td><td>$32</td><td><span class="badge ok">Active</span></td></tr>
+              <tr><td>Sample Post B</td><td>Traffic</td><td>8.7k</td><td>$24</td><td><span class="badge ok">Active</span></td></tr>
+              <tr><td>Sample Post C</td><td>Messages</td><td>6.1k</td><td>$18</td><td><span class="badge warn">Scheduled</span></td></tr>
+              <tr><td>Sample Post D</td><td>Engagement</td><td>5.9k</td><td>$16</td><td><span class="badge ok">Active</span></td></tr>
+              <tr><td>Sample Post E</td><td>Traffic</td><td>4.3k</td><td>$14</td><td><span class="badge info">Done</span></td></tr>
+              <tr><td>Sample Post F</td><td>Messages</td><td>3.8k</td><td>$12</td><td><span class="badge warn">Scheduled</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card"><h3>Ad account <span class="note">summary</span></h3>
+          <div class="row-item"><div class="grow"><div class="t">Page</div></div><b>Sample Page</b></div>
+          <div class="row-item"><div class="grow"><div class="t">Balance</div></div><b>$72.00</b></div>
+          <div class="row-item"><div class="grow"><div class="t">Daily cap</div></div><b>$25.00</b></div>
+          <p class="muted sm mt">Auto-boosts top posts by engagement.</p>
+        </div>
+      </div>
+     </div>
+
+     <div data-panel="boosts" style="display:none">
+      <div class="page-h"><h1>Boosts</h1><span class="spacer"></span><span class="btn solid">+ New boost</span></div>
+      <div class="card"><h3>All boosts <span class="note">6 active</span></h3>
+        <table>
+          <thead><tr><th>Post</th><th>Budget</th><th>Reach</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Sample Post A</td><td>$32</td><td>12.4k</td><td><span class="badge ok">Active</span></td></tr>
+            <tr><td>Sample Post B</td><td>$24</td><td>8.7k</td><td><span class="badge ok">Active</span></td></tr>
+            <tr><td>Sample Post C</td><td>$18</td><td>6.1k</td><td><span class="badge ok">Active</span></td></tr>
+            <tr><td>Sample Post D</td><td>$16</td><td>5.9k</td><td><span class="badge ok">Active</span></td></tr>
+            <tr><td>Sample Post E</td><td>$14</td><td>4.3k</td><td><span class="badge info">Done</span></td></tr>
+            <tr><td>Sample Post F</td><td>$12</td><td>3.8k</td><td><span class="badge info">Done</span></td></tr>
+            <tr><td>Sample Post G</td><td>$10</td><td>2.9k</td><td><span class="badge info">Done</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+     </div>
+
+     <div data-panel="insights" style="display:none">
+      <div class="page-h"><h1>Insights</h1><span class="spacer"></span><span class="chip">Last 6 days</span></div>
+      <div class="kpis" style="grid-template-columns:repeat(3,1fr)">
+        <div class="kpi accent"><div class="l">Total reach</div><div class="v">198k</div><div class="c">+14% vs prev</div></div>
+        <div class="kpi"><div class="l">Avg. cost / result</div><div class="v">$0.07</div><div class="c">Below target</div></div>
+        <div class="kpi ok"><div class="l">Engagement rate</div><div class="v">6.2%</div></div>
+      </div>
+      <div class="card"><h3>Reach, last 6 days</h3>
+        <div class="chart">
+          <div class="bar" style="height:48%"></div>
+          <div class="bar" style="height:64%"></div>
+          <div class="bar" style="height:56%"></div>
+          <div class="bar" style="height:82%"></div>
+          <div class="bar" style="height:71%"></div>
+          <div class="bar" style="height:96%"></div>
+        </div>
+        <div class="chart-x"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Mart POS — Retail Register (demo)</title>
+<link rel="stylesheet" href="demo.css">
+<style>
+  .tabrow{display:flex;gap:6px;padding:0 24px;background:var(--card);border-bottom:1px solid var(--line);flex:0 0 auto}
+  .tabrow [data-tab]{cursor:pointer;font-size:14px;font-weight:600;color:var(--mut);padding:12px 4px;margin-right:18px;border-bottom:2px solid transparent}
+  .tabrow [data-tab]:hover{color:var(--ink)}
+  .tabrow [data-tab].on{color:var(--accent);border-bottom-color:var(--accent)}
+  .tp-fill{flex:1;display:flex;overflow:hidden}
+</style></head>
+<body style="--accent:#16A34A">
+<div class="demo-ribbon">DEMO</div>
+<div class="app">
+  <div class="main">
+    <div class="topbar">
+      <div class="logo">POS</div><b>Sample Mart</b><span class="sub">· Register 01</span>
+      <div class="right"><span class="chip">Cashier: Dara</span><span class="chip"><span class="dot"></span>Online</span></div>
+    </div>
+    <div class="tabrow">
+      <span class="on" data-tab="register">Register</span>
+      <span data-tab="reports">Reports</span>
+      <span data-tab="inventory">Inventory</span>
+    </div>
+    <div class="tp-fill" data-tabpanel="register">
+    <div class="split">
+      <div class="content">
+        <div style="display:flex;gap:10px;margin-bottom:18px">
+          <span class="btn solid" style="padding:8px 16px">All</span>
+          <span class="chip">Drinks</span>
+          <span class="chip">Snacks</span>
+          <span class="chip">Grocery</span>
+        </div>
+        <div class="pgrid">
+          <div class="prod"><div class="ph"></div><div class="n">Mineral Water 500ml</div><div class="p">$0.40</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Iced Coffee Can</div><div class="p">$0.85</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Instant Noodles</div><div class="p">$0.50</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Potato Chips</div><div class="p">$1.20</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Energy Drink</div><div class="p">$1.00</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Chocolate Bar</div><div class="p">$0.75</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Rice 1kg</div><div class="p">$1.10</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Soap Bar</div><div class="p">$0.60</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Milk Carton</div><div class="p">$1.30</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Eggs (6)</div><div class="p">$1.05</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Bread Loaf</div><div class="p">$0.90</div></div>
+          <div class="prod"><div class="ph"></div><div class="n">Tissue Pack</div><div class="p">$0.55</div></div>
+        </div>
+      </div>
+      <div class="cart">
+        <h3>Current Order · #1042</h3>
+        <div class="items">
+          <div class="row-item"><div class="grow"><div class="t">Iced Coffee Can</div><div class="s">2 × $0.85</div></div><b>$1.70</b></div>
+          <div class="row-item"><div class="grow"><div class="t">Potato Chips</div><div class="s">1 × $1.20</div></div><b>$1.20</b></div>
+          <div class="row-item"><div class="grow"><div class="t">Mineral Water 500ml</div><div class="s">3 × $0.40</div></div><b>$1.20</b></div>
+          <div class="row-item"><div class="grow"><div class="t">Rice 1kg</div><div class="s">1 × $1.10</div></div><b>$1.10</b></div>
+        </div>
+        <div class="sum">
+          <div class="r"><span>Subtotal</span><span>$5.20</span></div>
+          <div class="r"><span>Items</span><span>7</span></div>
+          <div class="tot"><span>Total</span><span>$5.20</span></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <span class="btn line block">Cash</span>
+            <span class="btn solid block">Charge · KHQR</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="content" data-tabpanel="reports" style="display:none">
+      <div class="page-h"><h1>Reports</h1><span class="spacer"></span><span class="muted sm">Register 01 · today</span></div>
+      <div class="kpis">
+        <div class="kpi accent"><div class="l">Sales today</div><div class="v">$284</div><div class="c">▲ 12% vs yesterday</div></div>
+        <div class="kpi"><div class="l">Transactions</div><div class="v">63</div><div class="c">▲ 8 more than avg</div></div>
+        <div class="kpi"><div class="l">Avg basket</div><div class="v">$4.51</div><div class="c warn">▼ 3% vs last week</div></div>
+        <div class="kpi"><div class="l">Items sold</div><div class="v">341</div><div class="c">▲ 5%</div></div>
+      </div>
+      <div class="card">
+        <h3>Sales, last 6 days<span class="note">USD</span></h3>
+        <div class="chart">
+          <div class="bar" style="height:58%"></div>
+          <div class="bar" style="height:72%"></div>
+          <div class="bar" style="height:49%"></div>
+          <div class="bar" style="height:84%"></div>
+          <div class="bar" style="height:66%"></div>
+          <div class="bar" style="height:95%"></div>
+        </div>
+        <div class="chart-x"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+      </div>
+    </div>
+
+    <div class="content" data-tabpanel="inventory" style="display:none">
+      <div class="page-h"><h1>Inventory</h1><span class="spacer"></span><span class="muted sm">12 SKUs · 2 low on stock</span></div>
+      <div class="card">
+        <table>
+          <thead><tr><th>Product</th><th>Category</th><th>Stock</th><th>Price</th></tr></thead>
+          <tbody>
+            <tr><td>Mineral Water 500ml</td><td>Drinks</td><td>142</td><td>$0.40</td></tr>
+            <tr><td>Iced Coffee Can</td><td>Drinks</td><td>38</td><td>$0.85</td></tr>
+            <tr><td>Instant Noodles</td><td>Grocery</td><td><span class="badge warn">6 left</span></td><td>$0.50</td></tr>
+            <tr><td>Potato Chips</td><td>Snacks</td><td>54</td><td>$1.20</td></tr>
+            <tr><td>Energy Drink</td><td>Drinks</td><td>27</td><td>$1.00</td></tr>
+            <tr><td>Chocolate Bar</td><td>Snacks</td><td>61</td><td>$0.75</td></tr>
+            <tr><td>Rice 1kg</td><td>Grocery</td><td>88</td><td>$1.10</td></tr>
+            <tr><td>Soap Bar</td><td>Household</td><td><span class="badge warn">4 left</span></td><td>$0.60</td></tr>
+            <tr><td>Milk Carton</td><td>Grocery</td><td>19</td><td>$1.30</td></tr>
+            <tr><td>Eggs (6)</td><td>Grocery</td><td>33</td><td>$1.05</td></tr>
+            <tr><td>Bread Loaf</td><td>Grocery</td><td>21</td><td>$0.90</td></tr>
+            <tr><td>Tissue Pack</td><td>Household</td><td>47</td><td>$0.55</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>1-Click Content Machine (demo)</title>
+<link rel="stylesheet" href="demo.css"></head>
+<body style="--accent:#7C3AED">
+<div class="demo-ribbon">DEMO</div>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="m">1C</div><b>Content Machine</b></div>
+    <div class="nav on" data-view="generate"><span class="d"></span>Generate</div>
+    <div class="nav" data-view="library"><span class="d"></span>Library</div>
+    <div class="nav" data-view="schedule"><span class="d"></span>Schedule</div>
+    <div class="nav" data-view="brands"><span class="d"></span>Brands</div>
+    <div class="nav" data-view="settings"><span class="d"></span>Settings</div>
+    <div class="foot">AI content · Sample workspace</div>
+  </aside>
+  <div class="main">
+    <div class="topbar"><b>Generate</b><span class="sub">· One prompt → a week of posts</span>
+      <div class="right"><span class="chip">Brand: Coffee Co.</span><span class="btn solid" style="padding:8px 14px">New batch</span></div></div>
+    <div class="content">
+      <div data-panel="generate">
+      <div class="card" style="margin-bottom:22px">
+        <h3>Generate posts <span class="note">AI drafts on-brand captions</span></h3>
+        <div style="border:1px solid var(--line);border-radius:var(--r-sm);padding:14px 16px;color:var(--ink);font-size:14px;line-height:1.5;min-height:84px;background:var(--bg)">
+          Promote our weekend 15% off coffee sale, friendly Khmer tone
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">
+          <span class="chip">Tone: Friendly</span>
+          <span class="chip">Language: Khmer</span>
+          <span class="chip">Count: 12</span>
+        </div>
+        <div class="mt"><span class="btn solid">Generate</span></div>
+      </div>
+
+      <h3 style="font-size:15px;margin-bottom:16px">Generated posts <span class="muted sm" style="font-weight:500">· 12 drafts ready to schedule</span></h3>
+      <div class="pgrid" style="grid-template-columns:repeat(auto-fill,minmax(230px,1fr))">
+        <div class="card" style="padding:16px">
+          <span class="badge info">Post 1</span>
+          <p style="font-size:13px;line-height:1.5;margin:12px 0 14px;color:var(--ink)">Weekend treat! Grab your favorite brew at 15% off — Saturday &amp; Sunday only. See you soon!</p>
+          <span class="btn line" style="padding:8px 14px;font-size:13px">Copy</span>
+        </div>
+        <div class="card" style="padding:16px">
+          <span class="badge info">Post 2</span>
+          <p style="font-size:13px;line-height:1.5;margin:12px 0 14px;color:var(--ink)">Slow mornings deserve good coffee. 15% off all drinks this weekend — bring a friend.</p>
+          <span class="btn line" style="padding:8px 14px;font-size:13px">Copy</span>
+        </div>
+        <div class="card" style="padding:16px">
+          <span class="badge info">Post 3</span>
+          <p style="font-size:13px;line-height:1.5;margin:12px 0 14px;color:var(--ink)">Two days, one sweet deal. Enjoy 15% off every cup — freshly roasted, warmly served.</p>
+          <span class="btn line" style="padding:8px 14px;font-size:13px">Copy</span>
+        </div>
+        <div class="card" style="padding:16px">
+          <span class="badge info">Post 4</span>
+          <p style="font-size:13px;line-height:1.5;margin:12px 0 14px;color:var(--ink)">Tag your coffee buddy! This weekend it's 15% off — perfect excuse to catch up.</p>
+          <span class="btn line" style="padding:8px 14px;font-size:13px">Copy</span>
+        </div>
+        <div class="card" style="padding:16px">
+          <span class="badge info">Post 5</span>
+          <p style="font-size:13px;line-height:1.5;margin:12px 0 14px;color:var(--ink)">Rainy season, warm cups. Cozy up with 15% off your weekend order. We saved you a seat.</p>
+          <span class="btn line" style="padding:8px 14px;font-size:13px">Copy</span>
+        </div>
+        <div class="card" style="padding:16px">
+          <span class="badge info">Post 6</span>
+          <p style="font-size:13px;line-height:1.5;margin:12px 0 14px;color:var(--ink)">Last call for the weekend sale — 15% off closes Sunday night. Come sip the savings!</p>
+          <span class="btn line" style="padding:8px 14px;font-size:13px">Copy</span>
+        </div>
+      </div>
+      </div>
+
+      <div data-panel="library" style="display:none">
+        <div class="page-h"><h1>Library</h1><span class="spacer"></span><span class="muted sm">Saved &amp; published posts</span></div>
+        <div class="pgrid" style="grid-template-columns:repeat(auto-fill,minmax(230px,1fr))">
+          <div class="card" style="padding:16px"><span class="badge ok">Published</span><p style="font-size:13px;line-height:1.5;margin:12px 0 14px;color:var(--ink)">New season menu is here! Come taste our roasted almond latte this week.</p><span class="muted sm">Coffee Co. · 2 days ago</span></div>
+          <div class="card" style="padding:16px"><span class="badge info">Draft</span><p style="font-size:13px;line-height:1.5;margin:12px 0 14px;color:var(--ink)">Weekend treat! Grab your favorite brew at 15% off — Saturday &amp; Sunday only.</p><span class="muted sm">Coffee Co. · saved</span></div>
+          <div class="card" style="padding:16px"><span class="badge ok">Published</span><p style="font-size:13px;line-height:1.5;margin:12px 0 14px;color:var(--ink)">Meet the team behind your morning cup. Fresh, local, roasted daily.</p><span class="muted sm">Coffee Co. · 5 days ago</span></div>
+          <div class="card" style="padding:16px"><span class="badge warn">Scheduled</span><p style="font-size:13px;line-height:1.5;margin:12px 0 14px;color:var(--ink)">Rainy season, warm cups. Cozy up with 15% off your weekend order.</p><span class="muted sm">Coffee Co. · Sat 9am</span></div>
+          <div class="card" style="padding:16px"><span class="badge info">Draft</span><p style="font-size:13px;line-height:1.5;margin:12px 0 14px;color:var(--ink)">Tag your coffee buddy! Perfect excuse to catch up this weekend.</p><span class="muted sm">Coffee Co. · saved</span></div>
+          <div class="card" style="padding:16px"><span class="badge ok">Published</span><p style="font-size:13px;line-height:1.5;margin:12px 0 14px;color:var(--ink)">Behind every great day is a great cup. Start yours with us.</p><span class="muted sm">Coffee Co. · 1 week ago</span></div>
+        </div>
+      </div>
+
+      <div data-panel="schedule" style="display:none">
+        <div class="page-h"><h1>Schedule</h1><span class="spacer"></span><span class="btn solid" style="padding:8px 14px">Add post</span></div>
+        <div class="card">
+          <table>
+            <thead><tr><th>Date</th><th>Post</th><th>Platform</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Sat 9:00 AM</td><td>Weekend 15% off treat</td><td>Facebook</td><td><span class="badge warn">Scheduled</span></td></tr>
+              <tr><td>Sat 12:00 PM</td><td>Slow mornings brew</td><td>TikTok</td><td><span class="badge warn">Scheduled</span></td></tr>
+              <tr><td>Sun 10:00 AM</td><td>Two days, one deal</td><td>Facebook</td><td><span class="badge warn">Scheduled</span></td></tr>
+              <tr><td>Fri 6:00 PM</td><td>New season menu</td><td>Facebook</td><td><span class="badge ok">Posted</span></td></tr>
+              <tr><td>Thu 5:00 PM</td><td>Meet the team</td><td>TikTok</td><td><span class="badge ok">Posted</span></td></tr>
+              <tr><td>Sun 7:00 PM</td><td>Last call for the sale</td><td>Facebook</td><td><span class="badge warn">Scheduled</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="demo.js"></script>
+</body></html>

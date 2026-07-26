@@ -1,0 +1,146 @@
+/* ============================================================
+   Shared demo design system — used by every project mockup.
+   Set the accent per page:  <body style="--accent:#2563eb">
+   All content is SAMPLE DATA only. No real client info.
+   ============================================================ */
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+:root{
+  --accent:#2563eb; --accent-soft:color-mix(in srgb,var(--accent) 12%,#fff);
+  --ink:#0f172a; --mut:#64748b; --line:#e6ebf2; --bg:#f5f7fb; --card:#ffffff;
+  --ok:#16a34a; --okbg:#e7f6ec; --warn:#b45309; --warnbg:#fef3c7; --bad:#dc2626; --badbg:#fee2e2;
+  --r:14px; --r-sm:10px;
+}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-size:15px}
+
+/* ---- app shell ---- */
+.app{display:flex;min-height:100vh;height:100vh;overflow:hidden}
+.sidebar{width:230px;flex:0 0 230px;background:var(--card);border-right:1px solid var(--line);
+  padding:20px 14px;display:flex;flex-direction:column;gap:4px}
+.sidebar.dark{background:#0f172a;border-color:#1e293b}
+.brand{display:flex;align-items:center;gap:10px;margin-bottom:20px;padding:0 8px}
+.brand .m{width:34px;height:34px;border-radius:10px;background:var(--accent);color:#fff;
+  display:grid;place-items:center;font-weight:800;font-size:14px;flex:0 0 auto}
+.brand b{font-size:15px}
+.sidebar.dark .brand b{color:#fff}
+.nav{font-size:14px;color:var(--mut);padding:10px 13px;border-radius:var(--r-sm);
+  display:flex;gap:11px;align-items:center;font-weight:500;cursor:pointer}
+.nav .d{width:8px;height:8px;border-radius:3px;background:currentColor;opacity:.5;flex:0 0 auto}
+.nav:hover{background:var(--bg)}
+.nav.on{background:var(--accent-soft);color:var(--accent);font-weight:700}
+.sidebar.dark .nav{color:#94a3b8}
+.sidebar.dark .nav:hover{background:rgba(255,255,255,.05)}
+.sidebar.dark .nav.on{background:color-mix(in srgb,var(--accent) 26%,#0f172a);color:#fff}
+.sidebar .foot{margin-top:auto;font-size:12px;color:var(--mut);padding:8px}
+
+/* ---- main + topbar ---- */
+.main{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.topbar{height:60px;flex:0 0 60px;background:var(--card);border-bottom:1px solid var(--line);
+  display:flex;align-items:center;padding:0 24px;gap:14px}
+.topbar .logo{width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;font-size:13px}
+.topbar b{font-size:16px}
+.topbar .sub{color:var(--mut);font-size:13px}
+.topbar .right{margin-left:auto;display:flex;gap:10px;align-items:center;font-size:13px;color:var(--mut)}
+.chip{background:var(--bg);border:1px solid var(--line);padding:6px 12px;border-radius:8px;font-size:13px;color:var(--mut)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);display:inline-block;margin-right:5px}
+.content{flex:1;padding:24px 30px;overflow:auto}
+
+/* ---- headings ---- */
+.page-h{display:flex;align-items:center;margin-bottom:22px;gap:14px}
+.page-h h1{font-size:22px}
+.page-h .spacer{margin-left:auto}
+
+/* ---- KPI cards ---- */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.kpi .l{font-size:13px;color:var(--mut);margin-bottom:8px}
+.kpi .v{font-size:26px;font-weight:800;line-height:1}
+.kpi .c{font-size:12px;margin-top:6px;color:var(--ok)}
+.kpi .c.warn{color:var(--warn)} .kpi .c.bad{color:var(--bad)}
+.kpi.accent .v{color:var(--accent)} .kpi.bad .v{color:var(--bad)} .kpi.ok .v{color:var(--ok)}
+
+/* ---- cards / grid ---- */
+.cols{display:grid;gap:16px}
+.cols.c-2{grid-template-columns:1fr 1fr}
+.cols.c-3{grid-template-columns:1fr 1fr 1fr}
+.cols.c-32{grid-template-columns:1.6fr 1fr}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.card > h3{font-size:15px;margin-bottom:16px;display:flex;align-items:center}
+.card > h3 .note{margin-left:auto;font-size:12px;color:var(--mut);font-weight:500}
+
+/* ---- tables ---- */
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);
+  padding:9px 0;border-bottom:1px solid var(--line);font-weight:700}
+td{padding:12px 0;font-size:13px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+
+/* ---- badges / tags ---- */
+.badge{font-size:11px;font-weight:700;padding:4px 10px;border-radius:100px;display:inline-block}
+.badge.ok{background:var(--okbg);color:var(--ok)}
+.badge.warn{background:var(--warnbg);color:var(--warn)}
+.badge.bad{background:var(--badbg);color:var(--bad)}
+.badge.info{background:var(--accent-soft);color:var(--accent)}
+.badge.mut{background:var(--bg);color:var(--mut)}
+
+/* ---- buttons ---- */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:14px;
+  padding:10px 16px;border-radius:var(--r-sm);cursor:pointer;border:1px solid transparent}
+.btn.solid{background:var(--accent);color:#fff}
+.btn.line{background:var(--card);border-color:var(--line);color:var(--ink)}
+.btn.block{width:100%;justify-content:center;padding:13px}
+
+/* ---- lists / rows ---- */
+.row-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.row-item:last-child{border-bottom:0}
+.row-item .grow{flex:1}
+.row-item .t{font-size:13px;font-weight:600}
+.row-item .s{font-size:12px;color:var(--mut)}
+.avatar{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 55%,#000));
+  color:#fff;display:grid;place-items:center;font-size:12px;font-weight:700;flex:0 0 auto}
+.pbar{height:6px;background:var(--bg);border-radius:4px;overflow:hidden;margin-top:5px}
+.pbar i{display:block;height:100%;background:var(--accent);border-radius:4px}
+
+/* ---- chart (css bars) ---- */
+.chart{display:flex;align-items:flex-end;gap:12px;height:160px;padding-top:10px}
+.chart .bar{flex:1;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 55%,#fff),var(--accent));border-radius:6px 6px 0 0}
+.chart-x{display:flex;gap:12px;margin-top:8px}
+.chart-x span{flex:1;text-align:center;font-size:11px;color:var(--mut)}
+
+/* ---- product grid + cart (POS / store) ---- */
+.split{display:grid;grid-template-columns:1fr 360px;flex:1;overflow:hidden}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.prod{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px}
+.prod .ph{height:80px;border-radius:8px;background:linear-gradient(135deg,#eef2f7,#e2e8f0)}
+.prod .n{font-size:13px;font-weight:600}
+.prod .p{font-size:14px;font-weight:800;color:var(--accent)}
+.cart{background:var(--card);border-left:1px solid var(--line);display:flex;flex-direction:column}
+.cart h3{padding:18px 20px 12px;font-size:15px;border-bottom:1px solid var(--line)}
+.cart .items{flex:1;padding:4px 20px;overflow:auto}
+.cart .sum{padding:16px 20px;border-top:1px solid var(--line)}
+.sum .r{display:flex;justify-content:space-between;font-size:13px;color:var(--mut);margin-bottom:8px}
+.sum .tot{display:flex;justify-content:space-between;font-size:20px;font-weight:800;margin:10px 0 14px;color:var(--ink)}
+
+/* ---- kanban ---- */
+.kanban{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.kanban h4{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--mut);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.kanban h4 b{background:var(--card);border:1px solid var(--line);border-radius:100px;padding:1px 9px;font-size:12px;color:var(--ink)}
+
+/* ---- phone frame (mobile demos) ---- */
+.stage{min-height:100vh;display:grid;place-items:center;background:radial-gradient(120% 100% at 50% 0%,#eef2f8,#dde3ec);padding:40px}
+.phone{width:390px;height:820px;background:#000;border-radius:46px;padding:12px;box-shadow:0 40px 90px rgba(0,0,0,.28)}
+.phone .screen{width:100%;height:100%;border-radius:36px;overflow:hidden;position:relative;background:var(--card)}
+.phone .notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:38%;height:26px;background:#000;border-radius:0 0 16px 16px;z-index:5}
+
+/* ---- store / marketing hero ---- */
+.store-nav{height:60px;display:flex;align-items:center;gap:22px;padding:0 30px;border-bottom:1px solid var(--line);background:var(--card);font-size:14px;color:var(--mut)}
+.store-nav b{font-size:17px;color:var(--ink)}
+.store-nav .grow{flex:1}
+.hero-store{padding:44px 30px;display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center;background:var(--card)}
+.hero-store h1{font-size:42px;line-height:1.05;letter-spacing:-1px;margin-bottom:14px}
+.hero-store p{color:var(--mut);margin-bottom:20px}
+
+/* utility */
+.muted{color:var(--mut)} .sm{font-size:12px} .mt{margin-top:14px} .center{text-align:center}
+.demo-ribbon{position:fixed;top:14px;right:-38px;transform:rotate(45deg);background:var(--accent);color:#fff;
+  font-size:11px;font-weight:800;letter-spacing:.1em;padding:6px 44px;z-index:100;box-shadow:0 4px 14px rgba(0,0,0,.2)}
